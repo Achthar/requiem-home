@@ -2,6 +2,10 @@
 .main-content {
   width: 100%;
   
+  span {
+    color: lighten($emphasize-txt-color, 90%);
+  }
+
   video {
     object-fit: cover;
     width: 100vw;
@@ -30,7 +34,7 @@
 
         .fas {
           color: $btn-bg-color;
-          background-color: lighten($footer-bg-color, 20%);
+          background-color: lighten($footer-bg-color, 90%);
           font-size: 35px;
           padding: 20px;
           border-radius: 50%;
@@ -136,7 +140,7 @@
   .cryptocurrencies-section {
     width: 100%;
     background-color: #fff;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 120px 0 50px;
     @include flexbox;
     text-align: center;
@@ -158,13 +162,14 @@
         padding: 30px 0 15px;
         margin-bottom: 50px;
         border-radius: 20px;
+        background-color: #e0e0e0;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3),
           1px -1px 2px rgba(0, 0, 0, 0.4);
         cursor: pointer;
         transition: all 0.3s ease-in;
 
         &:hover {
-          background-color: #800000;
+          background-color: #4b4b4b;
           color: #fff;
           transform: scale(1.05);
           p {

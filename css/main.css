@@ -64,13 +64,13 @@
         border-right: 1px solid rgba(255, 255, 255, 0.664);
         transition: color 0.3s ease-in; }
         .main-header-navbar__login__login-btn:hover {
-          color: #92b2f3; }
+          color: #fb4040; }
         .main-header-navbar__login__login-btn:active {
           color: #fbc17c; }
       .main-header-navbar__login__register-btn {
         width: 60%;
         padding: 9px 10px;
-        background-color: #3671e9;
+        background-color: #d10404;
         color: #fff;
         border-radius: 25px;
         display: inline-block;
@@ -80,29 +80,41 @@
         max-width: 140px;
         transition: all 0.3s ease-in; }
         .main-header-navbar__login__register-btn:hover {
-          background-color: #6491ee; }
+          background-color: #fa0e0e; }
         .main-header-navbar__login__register-btn:active {
           transform: scale(0.95);
-          background-color: #0d3179; }
+          background-color: #3b0101; }
     .main-header-navbar__nav {
       margin-top: 15px;
       order: 2;
       width: 100%;
       list-style-type: none;
+      background-color: #494949;
+      border: 3px solid white;
+      border-radius: 16px;
+      height: 50px;
+      margin-right: 10px;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
       align-items: center; }
       .main-header-navbar__nav__item {
         color: #fff;
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        border-right: 3px solid white;
+        padding-right: 7px;
+        font-weight: bold; }
+      .main-header-navbar__nav__item-end {
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: bold; }
       .main-header-navbar__nav__link {
         color: inherit;
         text-decoration: none;
         display: inline-block;
         transition: color 0.3s ease-in; }
         .main-header-navbar__nav__link:hover {
-          color: #92b2f3; }
+          color: #fb4040; }
         .main-header-navbar__nav__link:active {
           color: #fbc17c; }
   .main-header-content-principal {
@@ -112,12 +124,16 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    background-color: #494949;
+    border: 3px solid white;
+    border-radius: 16px;
+    padding: 5px; }
     .main-header-content-principal__title {
       margin-top: 40px;
       font-size: 3rem; }
       .main-header-content-principal__title span {
-        color: #3b9af1; }
+        color: #b20707; }
     .main-header-content-principal__description {
       font-size: 1.4rem;
       margin: 25px auto;
@@ -125,7 +141,7 @@
     .main-header-content-principal__btn {
       width: 150px;
       padding: 9px 10px;
-      background-color: #3671e9;
+      background-color: #d10404;
       color: #fff;
       border-radius: 25px;
       display: inline-block;
@@ -134,13 +150,13 @@
       font-size: 1.4rem;
       transition: all 0.3s ease-in; }
       .main-header-content-principal__btn:hover {
-        background-color: #6491ee; }
+        background-color: #fa0e0e; }
       .main-header-content-principal__btn:active {
         transform: scale(0.95);
-        background-color: #0d3179; }
+        background-color: #3b0101; }
       .main-header-content-principal__btn i {
         margin-left: 10px;
-        color: #3671e9;
+        color: #d10404;
         background-color: #fff;
         border-radius: 50%;
         padding: 5px;
@@ -169,7 +185,7 @@
         width: 30%;
         font-size: 1rem;
         background-color: #fff;
-        color: #0d0d2b;
+        color: #300000;
         font-weight: 500; }
       .main-header-content-principal .discount-section__description {
         font-size: 1rem;
@@ -189,6 +205,8 @@
 
 .main-content {
   width: 100%; }
+  .main-content span {
+    color: #ffe9e9; }
   .main-content video {
     object-fit: cover;
     width: 100vw;
@@ -216,8 +234,8 @@
         margin-bottom: 40px;
         text-align: center; }
         .main-content .why-us-wrapper .stats-section__reference .fas {
-          color: #3671e9;
-          background-color: #252579;
+          color: #d10404;
+          background-color: #fffcfc;
           font-size: 35px;
           padding: 20px;
           border-radius: 50%; }
@@ -236,14 +254,14 @@
         .main-content .why-us-wrapper .why-us-section__content__title {
           font-size: 2.5rem; }
           .main-content .why-us-wrapper .why-us-section__content__title span {
-            color: #cae4fb; }
+            color: #f95959; }
         .main-content .why-us-wrapper .why-us-section__content__description {
           font-size: 1.4rem;
           margin: 20px auto; }
         .main-content .why-us-wrapper .why-us-section__content__btn {
           width: 150px;
           padding: 9px 10px;
-          background-color: #3671e9;
+          background-color: #d10404;
           color: #fff;
           border-radius: 25px;
           display: inline-block;
@@ -253,10 +271,10 @@
           margin: 20px auto 10px;
           transition: all 0.3s ease-in; }
           .main-content .why-us-wrapper .why-us-section__content__btn:hover {
-            background-color: #6491ee; }
+            background-color: #fa0e0e; }
           .main-content .why-us-wrapper .why-us-section__content__btn:active {
             transform: scale(0.95);
-            background-color: #0d3179; }
+            background-color: #3b0101; }
       .main-content .why-us-wrapper .why-us-section__illustration {
         width: 100%;
         animation-delay: 8s;
@@ -269,7 +287,7 @@
       .main-content .why-us-wrapper .benefits-section__title {
         font-size: 2.5rem; }
         .main-content .why-us-wrapper .benefits-section__title span {
-          color: #3b9af1; }
+          color: #b20707; }
       .main-content .why-us-wrapper .benefits-section__description {
         font-size: 1.4rem;
         margin-top: 30px; }
@@ -285,20 +303,20 @@
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); }
         .main-content .why-us-wrapper .benefits-section .card-info__title {
           font-size: 1.4rem;
-          color: #1181e8; }
+          color: #810505; }
         .main-content .why-us-wrapper .benefits-section .card-info__description {
           font-size: 1.3rem;
           font-weight: 700;
           margin: 15px auto; }
           .main-content .why-us-wrapper .benefits-section .card-info__description span {
-            color: #3b9af1; }
+            color: #b20707; }
         .main-content .why-us-wrapper .benefits-section .card-info__advice {
           font-size: 1rem;
-          color: #979797; }
+          color: #4b0000; }
   .main-content .cryptocurrencies-section {
     width: 100%;
     background-color: #fff;
-    color: black;
+    color: white;
     padding: 120px 0 50px;
     display: flex;
     flex-flow: row wrap;
@@ -327,11 +345,12 @@
         padding: 30px 0 15px;
         margin-bottom: 50px;
         border-radius: 20px;
+        background-color: #e0e0e0;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3), 1px -1px 2px rgba(0, 0, 0, 0.4);
         cursor: pointer;
         transition: all 0.3s ease-in; }
         .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:hover {
-          background-color: #800000;
+          background-color: #4b4b4b;
           color: #fff;
           transform: scale(1.05); }
           .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:hover p {
@@ -348,7 +367,7 @@
           padding: 10px 20px;
           font-size: 60px;
           border-radius: 50%;
-          background-color: #1181e8; }
+          background-color: #810505; }
         .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card__title {
           width: 100%;
           font-size: 2rem;
@@ -356,15 +375,15 @@
           .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card__title span {
             font-size: 1rem;
             font-weight: 400;
-            color: #979797; }
+            color: #4b0000; }
         .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card__description {
           font-size: 1.4rem;
           width: 70%;
-          color: #646464; }
+          color: black; }
         .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card__btn {
           width: 150px;
           padding: 9px 10px;
-          background-color: #3671e9;
+          background-color: #d10404;
           color: #fff;
           border-radius: 25px;
           display: inline-block;
@@ -374,7 +393,7 @@
           margin: 30px auto; }
           .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card__btn i {
             margin-left: 10px;
-            color: #3671e9;
+            color: #d10404;
             background-color: #fff;
             border-radius: 50%;
             padding: 5px;
@@ -415,7 +434,7 @@
         .main-content .features-section .invest-smart-article__content__btn {
           width: 150px;
           padding: 9px 10px;
-          background-color: #3671e9;
+          background-color: #d10404;
           color: #fff;
           border-radius: 25px;
           display: inline-block;
@@ -424,10 +443,10 @@
           font-size: 1.4rem;
           transition: all 0.3s ease-in; }
           .main-content .features-section .invest-smart-article__content__btn:hover {
-            background-color: #6491ee; }
+            background-color: #fa0e0e; }
           .main-content .features-section .invest-smart-article__content__btn:active {
             transform: scale(0.95);
-            background-color: #0d3179; }
+            background-color: #3b0101; }
       .main-content .features-section .invest-smart-article__graphic {
         width: 100%; }
     .main-content .features-section .detailed-stats-article__content {
@@ -446,7 +465,7 @@
       .main-content .features-section .detailed-stats-article__content__btn {
         width: 150px;
         padding: 9px 10px;
-        background-color: #3671e9;
+        background-color: #d10404;
         color: #fff;
         border-radius: 25px;
         display: inline-block;
@@ -455,10 +474,10 @@
         font-size: 1.4rem;
         transition: all 0.3s ease-in; }
         .main-content .features-section .detailed-stats-article__content__btn:hover {
-          background-color: #6491ee; }
+          background-color: #fa0e0e; }
         .main-content .features-section .detailed-stats-article__content__btn:active {
           transform: scale(0.95);
-          background-color: #0d3179; }
+          background-color: #3b0101; }
     .main-content .features-section .detailed-stats-article__graphic {
       width: 100%; }
     .main-content .features-section .grow-profit-article__content {
@@ -477,7 +496,7 @@
       .main-content .features-section .grow-profit-article__content__btn {
         width: 150px;
         padding: 9px 10px;
-        background-color: #3671e9;
+        background-color: #d10404;
         color: #fff;
         border-radius: 25px;
         display: inline-block;
@@ -486,10 +505,10 @@
         font-size: 1.4rem;
         transition: all 0.3s ease-in; }
         .main-content .features-section .grow-profit-article__content__btn:hover {
-          background-color: #6491ee; }
+          background-color: #fa0e0e; }
         .main-content .features-section .grow-profit-article__content__btn:active {
           transform: scale(0.95);
-          background-color: #0d3179; }
+          background-color: #3b0101; }
     .main-content .features-section .grow-profit-article__graphic {
       width: 100%; }
 
@@ -534,7 +553,7 @@
     .cta-section__subscribe__btn {
       width: 150px;
       padding: 9px 10px;
-      background-color: #3671e9;
+      background-color: #d10404;
       color: #fff;
       border-radius: 25px;
       display: inline-block;
@@ -542,7 +561,7 @@
       text-decoration: none;
       font-size: 1.4rem;
       background-color: #fff;
-      color: #0d0d2b;
+      color: #300000;
       font-weight: 500;
       transition: all 0.3s ease-in; }
       .cta-section__subscribe__btn:hover {
@@ -550,7 +569,7 @@
         color: #fff; }
       .cta-section__subscribe__btn:active {
         transform: scale(0.95);
-        background-color: #0d3179; }
+        background-color: #3b0101; }
 
 .footer-container {
   width: 80%;
@@ -563,7 +582,7 @@
 
 .main-footer {
   width: 100%;
-  background-color: #0d0d2b; }
+  background-color: #300000; }
   .main-footer__logo {
     width: 130px;
     margin-bottom: 35px; }
@@ -590,7 +609,7 @@
         font-weight: 400;
         transition: color 0.3s ease-in; }
         .main-footer-navbar__nav__link:hover {
-          color: #92b2f3; }
+          color: #fb4040; }
         .main-footer-navbar__nav__link:active {
           color: #fbc17c; }
   .main-footer .payment-systems {
@@ -617,7 +636,7 @@
         cursor: pointer;
         transition: color 0.3s ease-in; }
         .main-footer .payment-systems-icons .fab:hover {
-          color: #92b2f3; }
+          color: #fb4040; }
         .main-footer .payment-systems-icons .fab:active {
           color: #fbc17c; }
   .main-footer .copy-and-social {
@@ -647,7 +666,7 @@
         cursor: pointer;
         transition: color 0.3s ease-in; }
         .main-footer .copy-and-social .social-icons .fab:hover {
-          color: #92b2f3; }
+          color: #fb4040; }
         .main-footer .copy-and-social .social-icons .fab:active {
           color: #fbc17c; }
 
@@ -658,7 +677,7 @@
   padding: 5px;
   text-align: center;
   font-size: 1.4rem;
-  color: #0d0d2b;
+  color: #300000;
   font-weight: 500; }
   .attribution a {
     display: inline-block;
