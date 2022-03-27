@@ -1,16 +1,21 @@
 // Main content styles
 .main-content {
   width: 100%;
+  
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
 
   // Why us section
   .why-us-wrapper {
     width: 100%;
-    background-image: url(../assets/why-us-section-assets/why-us-pattern1.png),
-      url(../assets/why-us-section-assets/why-us-pattern2.png),
-      url(../assets/why-us-section-assets/why-us-pattern3.png);
-    background-repeat: no-repeat;
-    background-position: left center, right bottom, right top;
-    background-size: 250px;
     @include flexbox;
 
     // Stats section
@@ -159,7 +164,7 @@
         transition: all 0.3s ease-in;
 
         &:hover {
-          background-color: #35068c;
+          background-color: #800000;
           color: #fff;
           transform: scale(1.05);
           p {
@@ -168,7 +173,7 @@
         }
         &:active {
           transform: scale(0.95);
-          background-color: lighten(#35068c, 10%);
+          background-color: lighten(#800000, 10%);
         }
         .fab {
           font-size: 80px;
@@ -218,13 +223,7 @@
   // Features section
   .features-section {
     width: 100%;
-    background: $features-section-bg-color;
-    background-image: url(../assets/features-section-assets/features-section-pattern1.png),
-      url(../assets/features-section-assets/features-section-pattern2.png),
-      url(../assets/header-assets/header-pattern1.svg);
-    background-position: right bottom, left top, right center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    // background options here
     padding: 50px 0;
     @include flexbox;
     text-align: center;

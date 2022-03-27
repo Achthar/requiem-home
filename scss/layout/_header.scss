@@ -1,12 +1,18 @@
 // Main header styles
 .main-header {
   width: 100%;
-  background-image: url(../assets/header-assets/header-pattern1.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   margin-bottom: 75px;
-
+  
+  #video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
   // Navbar
   &-navbar {
     width: 100%;
@@ -129,8 +135,6 @@
     // Discount section
     .discount-section {
       width: 80%;
-      max-width: 230px;
-      background-color: $why-us-icon-bg-color;
       @include flexbox($jtf: space-between);
       border-radius: 30px;
       padding: 5px 0px;

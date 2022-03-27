@@ -9,10 +9,20 @@
   font-size: 62.5%;
 }
 .main-container {
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
   width: 100%;
   padding: 5% 0;
   font-family: "Rubik", sans-serif;
-  background: $body-bg-color;
   color: white;
   overflow-x: hidden;
 }
