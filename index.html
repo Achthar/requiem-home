@@ -25,7 +25,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.css" />
 
-    <title>Requiem Finance Landings</title>
+    <title>Requiem Finance</title>
 </head>
 
 <body>
@@ -37,26 +37,45 @@
         <header class="main-header">
             <div class="header-container">
                 <!-- Header navbar -->
+
                 <nav class="main-header-navbar">
-                    <img src="./assets/REQ.png" alt="REQ logo" class="main-header-navbar__logo" />
+                    <div class="main-header-navbar_flex-row">
+                        <img src="./assets/REQ.png" alt="REQ logo" class="main-header-navbar__logo" />
+                        <!-- <div class="main-header-navbar__app"> -->
+                        <div class="visibledevice">
+                            <a href="https://app.requiem.finance/"
+                                class="main-header-navbar__app__link-btn">
+                                To App
+                            </a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
 
-                    <ul class="main-header-navbar__nav">
-                        <li class="main-header-navbar__nav__item">
-                            <a href="#products" class="main-header-navbar__nav__link">Products</a>
-                        </li>
-                        <li class="main-header-navbar__nav__item">
-                            <a href="#features" class="main-header-navbar__nav__link">Features</a>
-                        </li>
-                        <li class="main-header-navbar__nav__item">
-                            <a href="#about" class="main-header-navbar__nav__link">About</a>
-                        </li>
-                        <li class="main-header-navbar__nav__item-ends">
-                            <a href="#contact" class="main-header-navbar__nav__link">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div class="main-header-navbar__login">
-                        <a href="https://app.requiem.finance/" class="main-header-navbar__login__register-btn">To App</a>
+                    <div class="main-header-navbar_relative-container">
+                        <div class="main-header-navbar__nav_bg"></div>
+                        <div class="main-header-navbar__nav_layer">
+                            <div class="main-header-navbar__nav">
+                                <div class="main-header-navbar__nav__item">
+                                    <a href="#products" class="main-header-navbar__nav__link">Products</a>
+                                </div>
+                                <div class="main-header-navbar__nav__item">
+                                    <a href="#features" class="main-header-navbar__nav__link">Features</a>
+                                </div>
+                                <div class="main-header-navbar__nav__item">
+                                    <a href="#about" class="main-header-navbar__nav__link">About</a>
+                                </div>
+                                <div class="main-header-navbar__nav__item-end">
+                                    <a href="#contact" class="main-header-navbar__nav__link">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visibledesktop">
+                        <!-- <div class="main-header-navbar__app"> -->
+                        <a href="https://app.requiem.finance/" class="main-header-navbar__app__link-btn">
+                            To App
+                        </a>
+                        <!-- </div> -->
                     </div>
 
 
@@ -64,24 +83,34 @@
 
                 <!-- Header content -->
                 <div class="main-header-content-container">
+
                     <div class="main-header-content-principal">
-                        <!-- <div class="discount-section">
-                            <span class="discount-section__discount">75% SAVE</span>
-                            <span class="discount-section__description">For the Black Friday weekend</span>
-                        </div> -->
-                        <h1 class="main-header-content-principal__title">
-                            High <span>performance</span> DEX
-                            for <span>trading</span>
-                            and <span>investing</span>
-                        </h1>
-                        <p class="main-header-content-principal__description">
-                            Buy and sell cryptocurrencies, trusted by 10M wallets with over
-                            $30 billion in transactions.
-                        </p>
-                        <a href="#" class="main-header-content-principal__btn">Try for FREE <i
-                                class="fas fa-angle-right"></i></a>
+
+
+                        <div class="main-header-content-principal_gen-box">
+                            <div class="main-header-content-principal_header-content-bg"></div>
+                            <div class="main-header-content-principal_header-content">
+                                <h1 class="main-header-content-principal__title">
+                                    High <span>performance</span> DEX
+                                    for <span>trading</span>
+                                    and <span>investing</span>
+                                </h1>
+
+                                <p class="main-header-content-principal__description">
+                                    Buy and sell any token, used by 100k wallets with over
+                                    $21M in transactions.
+                                </p>
+                                <a href="https://app.requiem.finance/avax-test/exchange"
+                                    class="main-header-content-principal__btn">Go to Exchange<i
+                                        class="fas fa-angle-right"></i></a>
+                            </div>
+                            <!-- </div> -->
+                            <img src="./assets/preview/Requiem_Gov.png" alt="" class="cover"/>
+                        </div>
+
                     </div>
                 </div>
+
 
             </div>
         </header>
@@ -98,7 +127,7 @@
                         <i class="fas fa-chart-line"></i>
                         <h3 class="stats-section__reference__title">$21M</h3>
                         <p class="stats-section__reference__description">
-                            Tokens Traded
+                            Value Traded
                         </p>
                     </div>
                     <div class="stats-section__reference">
@@ -129,7 +158,7 @@
                         </p>
                         <a href="#" class="why-us-section__content__btn">Learn More</a>
                     </div>
-                    <img src="./assets/why-us-section-assets/why-us-Illustration.svg" alt="" class="
+                    <img src="./assets/preview/Requiem_Gov.png" alt="" class="
                 why-us-section__illustration          " />
                 </div>
 
@@ -144,7 +173,8 @@
                     <div class="card-info">
                         <h4 class="card-info__title">ESTIMATED 24 HOUR TRADING PROFITS:</h4>
                         <p class="card-info__description">1,133.12 USDC <span>(~$1,133)</span></p>
-                        <span class="card-info__advice">Revenue will change based on trading activity and market prices.</span>
+                        <span class="card-info__advice">Revenue will change based on trading activity and market
+                            prices.</span>
                     </div>
                 </div>
             </section>
@@ -186,7 +216,8 @@
             <!-- Features section -->
             <section class="features-section" id="features">
                 <h2 class="features-section__title">
-                    <span>Requiem</span> is the universal trading platform - Liquidity provision, trading, liquidity farming, bonding and investing
+                    <span>Requiem</span> is the universal trading platform - Liquidity provision, trading, liquidity
+                    farming, bonding and investing
                 </h2>
 
                 <article class="invest-smart-article">
@@ -195,7 +226,8 @@
                         <p class="invest-smart-article__content__description">
                             Trade with extremely low slippage using weighted pairs and stable swaps.
                         </p>
-                        <a href="https://docs.requiem.finance/DEX.html" class="invest-smart-article__content__btn">Learn More</a>
+                        <a href="https://docs.requiem.finance/DEX.html" class="invest-smart-article__content__btn">Learn
+                            More</a>
                     </div>
 
                     <img src="./assets/features-section-assets/features-section-invest.svg" alt="Crypto stats"
@@ -208,9 +240,11 @@
                             Bond tokens to obtain asset-backet Requiem Tokens
                         </h3>
                         <p class="detailed-stats-article__content__description">
-                            Sell Liquidity Tokens to the protocol - for steep discounts that can be cashed out over time.
+                            Sell Liquidity Tokens to the protocol - for steep discounts that can be cashed out over
+                            time.
                         </p>
-                        <a href="https://docs.requiem.finance/INCENTIVES.html" class="detailed-stats-article__content__btn">Learn More</a>
+                        <a href="https://docs.requiem.finance/INCENTIVES.html"
+                            class="detailed-stats-article__content__btn">Learn More</a>
                     </div>
 
                     <img src="./assets/features-section-assets/features-section-statistic.svg" alt="Detailed statistics"
@@ -223,7 +257,8 @@
                             Grow your profit and track your investments
                         </h3>
                         <p class="grow-profit-article__content__description">
-                            Provide liquidity - and earn swap fees as well as fees from flash loans. Use Farms to increase the yeald without additional risks.
+                            Provide liquidity - and earn swap fees as well as fees from flash loans. Use Farms to
+                            increase the yeald without additional risks.
                         </p>
                         <a href="#" class="grow-profit-article__content__btn">Learn More</a>
                     </div>

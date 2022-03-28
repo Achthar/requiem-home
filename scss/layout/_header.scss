@@ -1,90 +1,162 @@
+.cover {
+  width: 100%;
+}
+
 // Main header styles
 .main-header {
+  img {
+    width: 900px;
+    height: 100%;
+    border-radius: 16px;
+  }
+
   width: 100%;
   margin-bottom: 75px;
 
-  #video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
   // Navbar
   &-navbar {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
     @include flexbox;
     margin-bottom: 50px;
 
+    &_flex-row {
+      display: flex;
+      justify-content: space-between;
+    }
     &__logo {
       width: 40%;
-      max-width: 160px;
+      max-width: 80px;
       margin-right: auto;
     }
-    &__login {
-      order: 1;
+    &_relative-container {
+      @include flexbox;
+      position: relative;
+      margin-right: 20px;
+      align-items: center;
+      align-self: center;
       width: 50%;
-      max-width: 240px;
+    }
+
+    &__app {
+      width: 50%;
       @include flexbox($jtf: space-between);
 
       &__login-btn {
         width: 35%;
         color: #fff;
-        font-size: 1.3rem;
+        font-size: 2.3rem;
         display: inline-block;
+        font: bold;
         text-align: center;
         text-decoration: none;
         border-right: 1px solid rgba(255, 255, 255, 0.664);
         transition: color 0.3s ease-in;
 
         &:hover {
-          color: lighten($btn-bg-color, 20%);
+          color: lighten($btn-bg-color, 90%);
         }
         &:active {
           color: lighten($bitcoin-icon-bg-color, 10%);
         }
       }
-      &__register-btn {
+      &__link-btn {
         @include button($width: 60%, $fnt-size: 1.3rem);
         max-width: 140px;
+        height: 45px;
+        width: 350px;
+        font-size: 2.3rem;
+        font: bold;
 
         transition: all 0.3s ease-in;
 
         &:hover {
           background-color: lighten($btn-bg-color, 10%);
+          // background-color: darken($btn-bg-color, 30%);
+          transform: scale(1.15);
         }
         &:active {
           transform: scale(0.95);
-          background-color: darken($btn-bg-color, 30%);
         }
       }
     }
     &__nav {
-      margin-top: 15px;
-      order: 2;
-      width: 100%;
-      list-style-type: none;
-      background-color: rgb(73, 73, 73);
-      border: 3px solid rgb(255, 255, 255);
       border-radius: 16px;
-      height: 50px;
+      height: 32px;
       margin-right: 10px;
-      @include flexbox($jtf: space-evenly);
+      align-self: center;
+      align-items: flex-end;
+      display: flex;
+
+      &_bg {
+        /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+        position: absolute;
+        margin-right: 10px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 99;
+
+        /* Pull the background 70px higher to the same place as #bg's */
+        background-position: center -70px;
+
+        -webkit-filter: blur(10px);
+        filter: url("/media/blur.svg#blur");
+        filter: blur(10px);
+      }
+
+      &_layer {
+        max-width: 900px;
+        /* Put this on top of the blurred layer */
+        position: relative;
+        align-items: center;
+        z-index: 100;
+        padding: 2px;
+        background: rgba(54, 54, 54, 0.75);
+        order: 2;
+        width: 100%;
+        list-style-type: none;
+        border-radius: 16px;
+        height: 45px;
+        margin-right: 10px;
+      }
 
       &__item {
         color: #fff;
+        padding: 3px;
+        position: relative;
+        text-align: center;
         font-size: 1.4rem;
-        border-right: 3px solid rgb(255, 255, 255);
-        padding-right: 7px;
+        width: 25%;
+        // border-right: 1px solid rgb(255, 255, 255);
+        margin-right: 7px;
+        margin-left: 7px;
         font-weight: bold;
+        &:hover {
+          color: lighten($btn-bg-color, 20%);
+          background: rgba(255, 255, 255, 0.75);
+          border-radius: 16px;
+          // border-right: 3px solid  lighten($btn-bg-color, 20%);
+        }
       }
       &__item-end {
         color: #fff;
         font-size: 1.4rem;
+        padding: 3px;
+        margin-right: 7px;
+        text-align: center;
+        width: 25%;
+        position: relative;
+        margin-left: 7px;
         font-weight: bold;
+        &:hover {
+          color: lighten($btn-bg-color, 20%);
+          background: rgba(255, 255, 255, 0.75);
+          border-radius: 16px;
+          // border-right: 3px solid  lighten($btn-bg-color, 20%);
+        }
       }
       &__link {
         color: inherit;
@@ -94,6 +166,7 @@
 
         &:hover {
           color: lighten($btn-bg-color, 20%);
+          // border-right: 3px solid  lighten($btn-bg-color, 20%);
         }
         &:active {
           color: lighten($bitcoin-icon-bg-color, 10%);
@@ -104,20 +177,54 @@
   //   Header content
 
   &-content-principal {
-    width: 100%;
-    max-width: 400px;
+    width: 1100px;
     @include flexbox;
     text-align: center;
-    background-color: rgb(73, 73, 73);
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 16px;
-    padding: 5px;
+    z-index: 100;
+
+    &_header-content-bg {
+      /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      max-width: 400px;
+      z-index: 99;
+      opacity: 0.5;
+      /* Pull the background 70px higher to the same place as #bg's */
+      background-position: center -70px;
+
+      -webkit-filter: blur(10px);
+      filter: url("/media/blur.svg#blur");
+      filter: blur(10px);
+    }
+
+    &_header-content {
+      /* Put this on top of the blurred layer */
+      position: relative;
+      max-width: 400px;
+      z-index: 100;
+      padding: 10px;
+
+      border: 1px solid black;
+      @include flexbox($jtf: space-evenly);
+      border-radius: 16px;
+      background: rgba(54, 54, 54, 0.75);
+    }
+
+    &_gen-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      gap: 10px;
+    }
 
     &__title {
       margin-top: 40px;
       font-size: 3rem;
       span {
-        color: lighten($ethereum-icon-bg-color, 10%);
+        color: $emphasize-txt-color;
       }
     }
     &__description {
@@ -181,13 +288,18 @@
         margin-right: 10px;
       }
     }
+    // Discount section
+    .illustration-section {
+      width: 1000px;
+      @include flexbox($jtf: space-between);
+      border-radius: 30px;
+    }
   }
 }
 
 .main-header-content-container {
   width: 100%;
   @include flexbox;
-
 }
 .header-container {
   width: 90%;

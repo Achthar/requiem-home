@@ -23,43 +23,133 @@
     min-width: 100%;
     min-height: 100%; }
 
-.cover {
+#search-bg {
+  /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+  opacity: 0.5;
+  /* Pull the background 70px higher to the same place as #bg's */
+  background-position: center -70px;
+  -webkit-filter: blur(10px);
+  filter: url("/media/blur.svg#blur");
+  filter: blur(10px); }
+
+#img-box {
+  display: flex;
+  align-content: space-between; }
+
+#gen-box {
+  display: flex;
+  align-content: space-between;
+  gap: 100px;
   width: 100%; }
+
+#search {
+  /* Put this on top of the blurred layer */
+  position: relative;
+  z-index: 100;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 16px;
+  background: rgba(54, 54, 54, 0.75); }
+
+#nav-bg {
+  /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+  position: absolute;
+  margin-right: 10px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+  /* Pull the background 70px higher to the same place as #bg's */
+  background-position: center -70px;
+  -webkit-filter: blur(10px);
+  filter: url("/media/blur.svg#blur");
+  filter: blur(10px); }
+
+#nav {
+  /* Put this on top of the blurred layer */
+  position: relative;
+  z-index: 100;
+  padding: 2px;
+  background: rgba(192, 192, 192, 0.75);
+  margin-top: 15px;
+  order: 2;
+  width: 100%;
+  list-style-type: none;
+  border-radius: 16px;
+  height: 45px;
+  margin-right: 10px; }
+
+#nav-item {
+  color: #fff;
+  font-size: 1.4rem;
+  border-right: 3px solid white;
+  margin-right: 7px;
+  margin-left: 7px;
+  font-weight: bold; }
+
+#nav-item-end {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-right: 7px;
+  margin-left: 7px;
+  font-weight: bold; }
+
+#nav-link {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease-in; }
+  #nav-link:hover {
+    color: #fb4040; }
+  #nav-link:active {
+    color: #fbc17c; }
+
+#relative-container {
+  position: relative;
+  margin-right: 20px; }
 
 .main-header {
   width: 100%;
   margin-bottom: 75px; }
   .main-header img {
-    width: 900px;
+    width: 200px;
     height: 100%;
     border-radius: 16px; }
+  .main-header #video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%; }
   .main-header-navbar {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px; }
-    .main-header-navbar_flex-row {
-      display: flex;
-      justify-content: space-between; }
     .main-header-navbar__logo {
       width: 40%;
-      max-width: 80px;
+      max-width: 160px;
       margin-right: auto; }
-    .main-header-navbar_relative-container {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      margin-right: 20px;
-      align-items: center;
-      align-self: center;
-      width: 50%; }
     .main-header-navbar__app {
+      order: 1;
       width: 50%;
+      max-width: 240px;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
@@ -90,7 +180,6 @@
         font-size: 1.3rem;
         max-width: 140px;
         height: 45px;
-        width: 350px;
         font-size: 2.3rem;
         font: bold;
         transition: all 0.3s ease-in; }
@@ -100,10 +189,12 @@
         .main-header-navbar__app__link-btn:active {
           transform: scale(0.95); }
     .main-header-navbar__nav {
+      order: 2;
+      width: 100%;
+      list-style-type: none;
       border-radius: 16px;
       height: 32px;
       margin-right: 10px;
-      align-self: center;
       align-items: flex-end;
       display: flex; }
       .main-header-navbar__nav_bg {
@@ -114,7 +205,6 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        width: 100%;
         z-index: 99;
         /* Pull the background 70px higher to the same place as #bg's */
         background-position: center -70px;
@@ -122,10 +212,8 @@
         filter: url("/media/blur.svg#blur");
         filter: blur(10px); }
       .main-header-navbar__nav_layer {
-        max-width: 900px;
         /* Put this on top of the blurred layer */
         position: relative;
-        align-items: center;
         z-index: 100;
         padding: 2px;
         background: rgba(54, 54, 54, 0.75);
@@ -139,30 +227,17 @@
         color: #fff;
         padding: 3px;
         position: relative;
-        text-align: center;
         font-size: 1.4rem;
-        width: 25%;
         margin-right: 7px;
         margin-left: 7px;
         font-weight: bold; }
-        .main-header-navbar__nav__item:hover {
-          color: #fb4040;
-          background: rgba(255, 255, 255, 0.75);
-          border-radius: 16px; }
       .main-header-navbar__nav__item-end {
         color: #fff;
         font-size: 1.4rem;
         padding: 3px;
         margin-right: 7px;
-        text-align: center;
-        width: 25%;
-        position: relative;
         margin-left: 7px;
         font-weight: bold; }
-        .main-header-navbar__nav__item-end:hover {
-          color: #fb4040;
-          background: rgba(255, 255, 255, 0.75);
-          border-radius: 16px; }
       .main-header-navbar__nav__link {
         color: inherit;
         text-decoration: none;
@@ -173,46 +248,17 @@
         .main-header-navbar__nav__link:active {
           color: #fbc17c; }
   .main-header-content-principal {
-    width: 1100px;
+    width: 1100px0px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
     z-index: 100; }
-    .main-header-content-principal_header-content-bg {
-      /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      max-width: 400px;
-      z-index: 99;
-      opacity: 0.5;
-      /* Pull the background 70px higher to the same place as #bg's */
-      background-position: center -70px;
-      -webkit-filter: blur(10px);
-      filter: url("/media/blur.svg#blur");
-      filter: blur(10px); }
-    .main-header-content-principal_header-content {
-      /* Put this on top of the blurred layer */
-      position: relative;
-      max-width: 400px;
-      z-index: 100;
-      padding: 10px;
-      border: 1px solid black;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      border-radius: 16px;
-      background: rgba(54, 54, 54, 0.75); }
     .main-header-content-principal_gen-box {
       display: flex;
-      flex-wrap: wrap;
       align-content: space-between;
-      gap: 10px; }
+      gap: 100px; }
     .main-header-content-principal__title {
       margin-top: 40px;
       font-size: 3rem; }
@@ -275,7 +321,7 @@
         font-size: 1rem;
         margin-right: 10px; }
     .main-header-content-principal .illustration-section {
-      width: 1000px;
+      width: 80%;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
@@ -367,7 +413,7 @@
             transform: scale(0.95);
             background-color: #3b0101; }
       .main-content .why-us-wrapper .why-us-section__illustration {
-        width: 800px;
+        width: 100%;
         animation-delay: 8s;
         animation-timing-function: ease-in-out;
         animation-duration: 2.5s; }
@@ -775,218 +821,6 @@
     margin-left: 5px;
     color: #d77907; }
 
-.visibledevice {
-  display: none; }
-
-.visibledesktop {
-  display: display; }
-
-@media (min-width: 320px) and (max-width: 420px) {
-  .visibledevice {
-    display: block; }
-
-  .visibledesktop {
-    display: none; } }
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .cover {
-    object-fit: cover;
-    width: 100vw; }
-
-  .header-container {
-    max-width: 100%; }
-
-  .main-header-navbar {
-    width: 100px;
-    justify-content: space-between; }
-    .main-header-navbar_relative-container {
-      position: inherit;
-      display: block;
-      margin-right: 20px; }
-    .main-header-navbar_flex-row {
-      align-items: center;
-      justify-content: space-between; }
-    .main-header-navbar__logo {
-      align-self: left;
-      margin-right: 33vw; }
-    .main-header-navbar__app__link-btn {
-      width: 33vw;
-      align-self: right; }
-    .main-header-navbar__nav {
-      width: 100%;
-      align-self: center;
-      margin-top: 0;
-      position: relative; }
-      .main-header-navbar__nav_bg {
-        margin-top: 5px;
-        align-self: center;
-        width: 90vw; }
-      .main-header-navbar__nav_layer {
-        margin-top: 5px;
-        align-self: center;
-        width: 90vw; }
-      .main-header-navbar__nav__item {
-        position: relative;
-        font-size: 1.1rem;
-        margin-right: 1px;
-        width: 25%;
-        margin-left: 1px;
-        font-weight: bold; }
-      .main-header-navbar__nav__item-end {
-        color: #fff;
-        position: relative;
-        width: 25%;
-        font-size: 1.1rem;
-        margin-right: 1px;
-        margin-left: 1px;
-        font-weight: bold; }
-    .main-header-navbar__login {
-      width: 30%; }
-  .main-header-content-principal {
-    align-self: center;
-    justify-content: flex-start;
-    text-align: left; }
-    .main-header-content-principal__illustration {
-      width: 50%; }
-    .main-header-content-principal_header-content {
-      align-self: center;
-      width: 350px; }
-    .main-header-content-principal_header-content-bg {
-      align-self: center;
-      width: 350px; }
-    .main-header-content-principal_gen-box img {
-      width: 100vw; }
-
-  .main-header-content-container {
-    justify-content: space-between;
-    align-self: center; }
-
-  .main-content .why-us-wrapper .stats-section {
-    margin-top: 50px;
-    width: 90%;
-    flex-flow: row nowrap; }
-    .main-content .why-us-wrapper .stats-section__reference {
-      width: 30%;
-      margin-bottom: 0; }
-  .main-content .why-us-wrapper .why-us-section {
-    width: 90%;
-    max-width: 750px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center; }
-    .main-content .why-us-wrapper .why-us-section__content {
-      width: 45%;
-      order: 1;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: left;
-      margin: 25px 0; }
-    .main-content .why-us-wrapper .why-us-section__illustration {
-      width: 55%; }
-  .main-content .why-us-wrapper .benefits-section {
-    max-width: 80%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center; }
-    .main-content .why-us-wrapper .benefits-section__title {
-      width: 60%; }
-    .main-content .why-us-wrapper .benefits-section__description {
-      width: 60%; }
-    .main-content .why-us-wrapper .benefits-section .card-info {
-      max-width: 50%; }
-  .main-content .cryptocurrencies-section__title {
-    width: 100%; }
-  .main-content .cryptocurrencies-section .cryptocurrencies-info-cards {
-    width: 95%;
-    max-width: 1050px; }
-  .main-content .features-section__title {
-    font-size: 3rem;
-    max-width: 580px; }
-  .main-content .features-section .invest-smart-article, .main-content .features-section .detailed-stats-article, .main-content .features-section .grow-profit-article {
-    justify-content: space-between;
-    margin-bottom: 75px; }
-    .main-content .features-section .invest-smart-article__content {
-      width: 45%;
-      margin: 40px 0;
-      justify-content: flex-start;
-      text-align: left; }
-      .main-content .features-section .invest-smart-article__content__title {
-        font-size: 2.6rem; }
-      .main-content .features-section .invest-smart-article__content__description {
-        margin: 25px 0; }
-    .main-content .features-section .invest-smart-article__graphic {
-      width: 50%; }
-  .main-content .features-section .detailed-stats-article {
-    justify-content: space-between;
-    margin-bottom: 75px; }
-    .main-content .features-section .detailed-stats-article__content {
-      width: 40%;
-      margin: 40px 0;
-      justify-content: flex-start;
-      text-align: left; }
-      .main-content .features-section .detailed-stats-article__content__title {
-        font-size: 2.6rem; }
-      .main-content .features-section .detailed-stats-article__content__description {
-        margin: 25px 0; }
-    .main-content .features-section .detailed-stats-article__graphic {
-      width: 55%;
-      order: -1; }
-  .main-content .features-section .grow-profit-article {
-    justify-content: space-between; }
-    .main-content .features-section .grow-profit-article__content {
-      width: 45%;
-      margin: 40px 0;
-      justify-content: flex-start;
-      text-align: left; }
-      .main-content .features-section .grow-profit-article__content__title {
-        font-size: 2.6rem; }
-      .main-content .features-section .grow-profit-article__content__description {
-        margin: 25px 0; }
-    .main-content .features-section .grow-profit-article__graphic {
-      width: 55%; }
-
-  .cta-section {
-    max-width: 750px;
-    justify-content: space-between; }
-    .cta-section__content {
-      width: 50%;
-      margin: 0;
-      text-align: left; }
-    .cta-section__subscribe {
-      width: 45%;
-      margin: 0;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center; }
-
-  .footer-container {
-    width: 90%;
-    max-width: 800px;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start; }
-
-  .main-footer-navbar {
-    width: 40%;
-    align-items: flex-start; }
-    .main-footer-navbar__nav {
-      width: 50%; }
-  .main-footer .payment-systems {
-    width: 35%; }
-    .main-footer .payment-systems-icons {
-      width: 100%; }
-  .main-footer .copy-and-social {
-    justify-content: space-between; }
-    .main-footer .copy-and-social__copy {
-      width: 200px;
-      margin-bottom: 0; }
-    .main-footer .copy-and-social .social-icons {
-      max-width: 200px;
-      justify-content: space-between; } }
 @media screen and (min-width: 768px) {
   .header-container {
     max-width: 80%; }
@@ -994,26 +828,18 @@
   .main-header-navbar {
     justify-content: space-between; }
     .main-header-navbar__nav {
-      width: 100%;
-      max-width: 800px;
+      width: 40%;
+      max-width: 290px;
       margin-top: 0;
       order: 1; }
     .main-header-navbar__login {
       width: 30%; }
   .main-header-content-principal {
-    align-self: center;
     width: 50%;
     justify-content: flex-start;
     text-align: left; }
-    .main-header-content-principal img {
-      width: 600px;
-      height: 100%;
-      border-radius: 16px; }
     .main-header-content-principal__illustration {
-      width: 50%;
-      align-self: center; }
-    .main-header-content-principal_gen-box {
-      flex-wrap: nowrap; }
+      width: 50%; }
 
   .main-header-content-container {
     justify-content: space-between; }
