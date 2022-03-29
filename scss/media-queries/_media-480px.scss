@@ -120,6 +120,12 @@
         img {
           width: 100vw;
         }
+        &_img-box{
+          align-self: center;
+          margin: 4vw;
+          width: 100vw;
+          height: 100%;
+        }
       }
     }
   }

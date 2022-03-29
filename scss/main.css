@@ -34,6 +34,35 @@
   width: 100%;
 }
 
+.image-stack {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.image-stack__item--top {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1 / span 8;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding-top: 20%;
+  z-index: 1;
+}
+
+.image-stack__item--bottom {
+  grid-column: 4 / -1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.coin-image {
+  width: 30px;
+  height: 100%;
+}
+
 .main-header {
   width: 100%;
   margin-bottom: 75px;

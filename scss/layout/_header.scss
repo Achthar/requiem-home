@@ -2,6 +2,28 @@
   width: 100%;
 }
 
+.image-stack {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.image-stack__item--top {
+  grid-column: 1 / span 8;
+  grid-row: 1; // must be on the same row as the other image
+  padding-top: 20%; // this pushes the image down, and keeps it proportional as it resizes
+  z-index: 1; // make this image render on top of the bottom
+}
+
+.image-stack__item--bottom {
+  grid-column: 4 / -1;
+  grid-row: 1; // make this image be on the same row
+}
+.coin-image {
+  width: 30px;
+  height: 100%;
+}
+
 // Main header styles
 .main-header {
   img {
@@ -218,7 +240,17 @@
       flex-wrap: wrap;
       align-content: space-between;
       justify-content: center;
-      gap: 10px;
+      gap: 20px;
+
+      img {
+        align-self: center;
+      }
+      &_img-box{
+        align-self: center;
+        margin-left: 50px;
+        width: 400px;
+        height: 100%;
+      }
     }
 
     &__title {
