@@ -187,7 +187,6 @@
       right: 0px;
       bottom: 0px;
       left: 0px;
-      max-width: 400px;
       z-index: 99;
       opacity: 0.5;
       /* Pull the background 70px higher to the same place as #bg's */
@@ -198,6 +197,7 @@
     .main-header-content-principal_header-content {
       /* Put this on top of the blurred layer */
       position: relative;
+      align-self: center;
       max-width: 400px;
       z-index: 100;
       padding: 10px;
@@ -212,6 +212,7 @@
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
+      justify-content: center;
       gap: 10px; }
     .main-header-content-principal__title {
       margin-top: 40px;
@@ -849,12 +850,16 @@
       width: 50%; }
     .main-header-content-principal_header-content {
       align-self: center;
-      width: 350px; }
+      width: 90vw;
+      margin: 1vw; }
     .main-header-content-principal_header-content-bg {
       align-self: center;
-      width: 350px; }
-    .main-header-content-principal_gen-box img {
-      width: 100vw; }
+      width: 90vw;
+      margin: 1vw; }
+    .main-header-content-principal_gen-box {
+      justify-content: flex-start; }
+      .main-header-content-principal_gen-box img {
+        width: 100vw; }
 
   .main-header-content-container {
     justify-content: space-between;
@@ -1002,8 +1007,8 @@
       width: 30%; }
   .main-header-content-principal {
     align-self: center;
-    width: 50%;
-    justify-content: flex-start;
+    width: 100%;
+    justify-content: center;
     text-align: left; }
     .main-header-content-principal img {
       width: 600px;

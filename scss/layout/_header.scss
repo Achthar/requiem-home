@@ -189,7 +189,6 @@
       right: 0px;
       bottom: 0px;
       left: 0px;
-      max-width: 400px;
       z-index: 99;
       opacity: 0.5;
       /* Pull the background 70px higher to the same place as #bg's */
@@ -203,6 +202,7 @@
     &_header-content {
       /* Put this on top of the blurred layer */
       position: relative;
+      align-self: center;
       max-width: 400px;
       z-index: 100;
       padding: 10px;
@@ -217,6 +217,7 @@
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
+      justify-content: center;
       gap: 10px;
     }
 

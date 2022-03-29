@@ -18,7 +18,6 @@
 // --------  Media 768px  -------------
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  
   .cover {
     object-fit: cover;
     width: 100vw;
@@ -108,18 +107,20 @@
       }
       &_header-content {
         align-self: center;
-        width: 350px;
+        width: 90vw;
+        margin: 1vw;
       }
       &_header-content-bg {
         align-self: center;
-        width: 350px;
+        width: 90vw;
+        margin: 1vw;
       }
       &_gen-box {
-        img{
+        justify-content: flex-start;
+        img {
           width: 100vw;
         }
       }
-  
     }
   }
   .main-header-content-container {
