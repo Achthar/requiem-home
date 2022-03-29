@@ -48,7 +48,7 @@
     }
     &__logo {
       width: 40%;
-      max-width: 80px;
+      max-width: 300px;
       margin-right: auto;
     }
     &_relative-container {
@@ -57,7 +57,14 @@
       margin-right: 20px;
       align-items: center;
       align-self: center;
-      width: 50%;
+    }
+
+    &_relative-row {
+      @include flexbox;
+      align-items: center;
+      position: relative;
+      flex-direction: row;
+      flex-wrap: nowrap;
     }
 
     &__app {
@@ -245,7 +252,7 @@
       img {
         align-self: center;
       }
-      &_img-box{
+      &_img-box {
         align-self: center;
         margin-left: 50px;
         width: 400px;
