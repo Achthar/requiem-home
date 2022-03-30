@@ -48,6 +48,7 @@
   .main-content {
     // Why us section
     .why-us-wrapper {
+      flex-flow: row nowrap;
       .stats-section {
         margin-top: 50px;
         width: 90%;
@@ -109,8 +110,8 @@
         margin-bottom: 75px;
 
         &__content {
-          width: 45%;
-          margin: 40px 0;
+          width: 350px;
+          margin: 10px 0;
           justify-content: flex-start;
           text-align: left;
           &__title {
@@ -121,8 +122,15 @@
           }
         }
         &__graphic {
-          width: 50%;
+          width: 100px;
         }
+        &__pair {
+          width: 50px;
+        }
+        &__pool {
+          width: 100px;
+        }
+
       }
       .detailed-stats-article {
         justify-content: space-between;

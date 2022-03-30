@@ -108,8 +108,58 @@
         font-size: 3.5rem;
         max-width: 700px;
       }
-      .invest-smart-article,
-      .detailed-stats-article,
+      .invest-smart-article {
+        max-width: 1100px;
+        justify-content: space-evenly;
+        margin-bottom: 120px;
+        &__content {
+          width: 600px;
+          margin: 0;
+          &__title {
+            font-size: 3rem;
+          }
+          &__description {
+            font-size: 1.8rem;
+          }
+          &__btn {
+            padding: 15px 10px;
+          }
+        }
+      }
+      .detailed-stats-article {
+        max-width: 1100px;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+        &__content {
+          width: 450px;
+          margin: 0;
+          &__title {
+            font-size: 3rem;
+          }
+          &__description {
+            font-size: 1.8rem;
+          }
+          &__btn {
+            padding: 15px 10px;
+          }
+        }
+        &__content-details {
+          width: 200px;
+          @include flexbox;
+          flex-direction: row;
+          &__title {
+            font-size: 2rem;
+          }
+          &__description {
+            font-size: 1.4rem;
+            width: 80%;
+            margin: 25px auto;
+          }
+          &__btn {
+            padding: 15px 10px;
+          }
+        }
+      }
       .grow-profit-article {
         max-width: 1100px;
         justify-content: space-evenly;
