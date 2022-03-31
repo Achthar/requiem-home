@@ -17,7 +17,7 @@
 
 // --------  Media 768px  -------------
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 520px) {
   .cover {
     object-fit: cover;
     width: 100vw;
@@ -51,7 +51,6 @@
       }
 
       &__app {
-        
         &__link-btn {
           width: 25vw;
           align-self: right;
@@ -126,9 +125,10 @@
           width: 100vw;
         }
         &_img-box {
+          margin-left: 1vw;
           align-self: center;
-          margin: 4vw;
-          width: 100vw;
+          // margin: 4vw;
+          width: 90vw;
           height: 100%;
         }
       }
@@ -203,16 +203,34 @@
         justify-content: space-between;
         margin-bottom: 75px;
 
+        &_layer {
+          margin-right: 0px;
+        }
+
+        &_layer-2 {
+          margin-left: -60px;
+        }
+
+        &_layer-container {
+          margin-top: 10px;
+          margin-right: -60px;
+        }
+
         &__content {
-          width: 45%;
+          width: 100%;
           margin: 40px 0;
+          margin-left: 60px;
           justify-content: flex-start;
           text-align: left;
           &__title {
             font-size: 2.6rem;
+            margin-left: 20px;
           }
           &__description {
-            margin: 25px 0;
+            margin-left: 20px;
+          }
+          &__btn {
+            margin-left: 20px;
           }
         }
         &__graphic {
@@ -223,8 +241,30 @@
         justify-content: space-between;
         margin-bottom: 75px;
 
+        &_layer {
+          // // order: 1;
+          // z-index: 1;
+          margin-top: 10px;
+          margin-left: -50px;
+          height: 250px;
+        }
+        &_layer-2 {
+          // order: 2;
+          // z-index: 2;
+          margin-right: -60px;
+          margin-left: 20vw;
+        }
+
+        &__content-details {
+          margin-top: 60px;
+          &__description {
+            margin-left: 30px;
+            width: 70vw;
+          }
+        }
+
         &__content {
-          width: 40%;
+          width: 100%;
           margin: 40px 0;
           justify-content: flex-start;
           text-align: left;
@@ -236,27 +276,54 @@
           }
         }
         &__graphic {
-          width: 55%;
-          order: -1;
+          width: 70%;
         }
       }
       .grow-profit-article {
         justify-content: space-between;
 
+        &_layer {
+          margin-top: 10px;
+          margin-right: -60px;
+          margin-left: 20vw;
+        }
+
+        &_layer-2 {
+          margin-left: -60px;
+        }
+
+        &_layer-container {
+          margin-top: 10px;
+        }
+        &__content-details {
+          &__description {
+            margin-right: 20vw;
+            width: 70vw;
+            max-width: 280px;
+          }
+        }
         &__content {
-          width: 45%;
+          width: 100%;
           margin: 40px 0;
+          margin-left: 10px;
           justify-content: flex-start;
           text-align: left;
           &__title {
             font-size: 2.6rem;
+            margin-left: 5vw;
+          }
+          &__btn {
+            margin-left: 5vw;
           }
           &__description {
             margin: 25px 0;
+             margin-left: 5vw;
+            width: 40vw;
           }
         }
         &__graphic {
-          width: 55%;
+          width: 80%;
+          margin-right: 10vw;
         }
       }
     }

@@ -99,6 +99,56 @@ ScrollReveal().reveal(".invest-smart-article__content", {
   distance: "3rem",
 });
 
+// ScrollReveal().reveal(".invest-smart-article__content-details", {
+//   duration: 2000,
+//   delay: 500,
+//   origin: "left",
+//   distance: "3rem",
+// });
+
+ScrollReveal().reveal(".invest-smart-article_layer", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
+ScrollReveal().reveal(".invest-smart-article_layer-2", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
+ScrollReveal().reveal(".grow-profit-article_layer", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
+ScrollReveal().reveal(".grow-profit-article_layer-2", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
+ScrollReveal().reveal(".detailed-stats-article_layer", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
+ScrollReveal().reveal(".detailed-stats-article_layer-2", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
+
 ScrollReveal().reveal(".detailed-stats-article__content", {
   duration: 2000,
   delay: 500,

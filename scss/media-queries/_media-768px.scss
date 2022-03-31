@@ -137,8 +137,8 @@
         margin-bottom: 75px;
 
         &__content {
-          width: 40%;
-          margin: 40px 0;
+          width: 350px;
+          margin: 10px 0;
           justify-content: flex-start;
           text-align: left;
           &__title {
@@ -149,7 +149,7 @@
           }
         }
         &__graphic {
-          width: 55%;
+          width: 100%;
           order: -1;
         }
       }
@@ -157,8 +157,8 @@
         justify-content: space-between;
 
         &__content {
-          width: 45%;
-          margin: 40px 0;
+          width: 100%;
+          margin: 10px 0;
           justify-content: flex-start;
           text-align: left;
           &__title {
@@ -169,7 +169,7 @@
           }
         }
         &__graphic {
-          width: 55%;
+          width: 95%;
         }
       }
     }

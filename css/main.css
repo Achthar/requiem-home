@@ -244,10 +244,37 @@
       .main-header-content-principal_gen-box img {
         align-self: center; }
       .main-header-content-principal_gen-box_img-box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
         align-self: center;
         margin-left: 50px;
-        width: 400px;
-        height: 100%; }
+        width: 100%;
+        border-width: 0 0 100px 100px;
+        height: 100%;
+        background: rgba(214, 214, 214, 0.795);
+        border-top: 4px solid #636363;
+        border-bottom: 4px solid #636363;
+        padding: 10px;
+        border-radius: 16px; }
+        .main-header-content-principal_gen-box_img-box_description-top {
+          margin-bottom: 5px;
+          margin-right: 0px;
+          text-align: right;
+          color: #2b2b2b;
+          font-size: 1.9rem; }
+          .main-header-content-principal_gen-box_img-box_description-top span {
+            color: #bd0000; }
+        .main-header-content-principal_gen-box_img-box_description-bottom {
+          margin-top: 5px;
+          margin-left: 0px;
+          color: #2b2b2b;
+          text-align: left;
+          font-size: 1.9rem; }
+          .main-header-content-principal_gen-box_img-box_description-bottom span {
+            color: #bd0000; }
     .main-header-content-principal__title {
       margin-top: 40px;
       font-size: 3rem; }
@@ -471,15 +498,17 @@
         padding: 30px 0 15px;
         margin-bottom: 50px;
         border-radius: 20px;
-        background-color: #e0e0e0;
+        background-color: rgba(54, 54, 54, 0.75);
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3), 1px -1px 2px rgba(0, 0, 0, 0.4);
         cursor: pointer;
         transition: all 0.3s ease-in; }
         .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:hover {
-          background-color: #4b4b4b;
+          background-color: rgba(167, 0, 0, 0.25);
           color: #fff;
           transform: scale(1.05); }
           .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:hover p {
+            color: #fff; }
+          .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:hover embed {
             color: #fff; }
         .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:active {
           transform: scale(0.95);
@@ -561,6 +590,7 @@
         /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
         position: absolute;
         margin-right: 10px;
+        height: 100px;
         top: 0px;
         right: 0px;
         bottom: 0px;
@@ -573,22 +603,37 @@
         filter: url("/media/blur.svg#blur");
         filter: blur(10px); }
       .main-content .features-section .invest-smart-article_layer {
-        max-width: 900px;
+        max-width: 400px;
         /* Put this on top of the blurred layer */
         position: relative;
         align-items: center;
         z-index: 100;
         padding: 2px;
-        background: rgba(54, 54, 54, 0.75);
-        order: 2;
+        background: rgba(167, 0, 0, 0.25);
         width: 100%;
         list-style-type: none;
         border-radius: 16px;
-        height: 45px;
+        margin-right: 10px;
+        margin-bottom: 10px; }
+      .main-content .features-section .invest-smart-article_layer-2 {
+        max-width: 400px;
+        /* Put this on top of the blurred layer */
+        position: relative;
+        align-items: center;
+        z-index: 100;
+        padding: 20px;
+        background: rgba(54, 54, 54, 0.75);
+        border: 2px solid black;
+        width: 100%;
+        list-style-type: none;
+        border-radius: 16px;
         margin-right: 10px; }
+      .main-content .features-section .invest-smart-article_layer-container {
+        margin: 5px; }
       .main-content .features-section .invest-smart-article__content {
         width: 100%;
         margin-bottom: 50px;
+        background: rgba(54, 54, 54, 0.75);
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -616,19 +661,34 @@
             transform: scale(0.95);
             background-color: #3b0101; }
       .main-content .features-section .invest-smart-article__content-details {
+        max-width: 900px;
+        /* Put this on top of the blurred layer */
+        position: relative;
+        align-items: center;
+        z-index: 100;
+        padding: 2px;
+        list-style-type: none;
+        border-radius: 16px;
+        height: 45px;
+        margin-right: 10px;
         width: 400px;
         margin-bottom: 50px;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        display: inline;
         flex-direction: row; }
         .main-content .features-section .invest-smart-article__content-details__title {
           font-size: 2rem; }
         .main-content .features-section .invest-smart-article__content-details__description {
           font-size: 1.4rem;
           width: 80%;
-          margin: 25px auto; }
+          margin: 5px auto; }
+          .main-content .features-section .invest-smart-article__content-details__description span {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: #d60101; }
         .main-content .features-section .invest-smart-article__content-details__btn {
           width: 150px;
           padding: 9px 10px;
@@ -653,6 +713,33 @@
         width: 200px; }
         .main-content .features-section .invest-smart-article__pool-pic img {
           width: 10px; }
+    .main-content .features-section .detailed-stats-article_layer {
+      max-width: 400px;
+      /* Put this on top of the blurred layer */
+      position: relative;
+      align-items: center;
+      z-index: 100;
+      padding: 2px;
+      background: rgba(167, 0, 0, 0.25);
+      width: 100%;
+      list-style-type: none;
+      border-radius: 16px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      height: 400px; }
+    .main-content .features-section .detailed-stats-article_layer-2 {
+      max-width: 400px;
+      /* Put this on top of the blurred layer */
+      position: relative;
+      align-items: center;
+      z-index: 100;
+      padding: 20px;
+      background: rgba(54, 54, 54, 0.75);
+      border: 2px solid black;
+      width: 100%;
+      list-style-type: none;
+      border-radius: 16px;
+      margin-right: 10px; }
     .main-content .features-section .detailed-stats-article__content {
       width: 100%;
       margin-bottom: 50px;
@@ -682,8 +769,80 @@
         .main-content .features-section .detailed-stats-article__content__btn:active {
           transform: scale(0.95);
           background-color: #3b0101; }
+    .main-content .features-section .detailed-stats-article__content-details {
+      max-width: 900px;
+      /* Put this on top of the blurred layer */
+      position: relative;
+      align-items: center;
+      z-index: 100;
+      padding: 2px;
+      list-style-type: none;
+      border-radius: 16px;
+      height: 45px;
+      margin-right: 10px;
+      width: 400px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      display: inline;
+      flex-direction: row; }
+      .main-content .features-section .detailed-stats-article__content-details__title {
+        font-size: 2rem; }
+      .main-content .features-section .detailed-stats-article__content-details__description {
+        font-size: 1.4rem;
+        width: 100%;
+        margin: 5px auto; }
+        .main-content .features-section .detailed-stats-article__content-details__description span {
+          font-size: 1.7rem;
+          font-weight: 800;
+          color: #d60101; }
+      .main-content .features-section .detailed-stats-article__content-details__btn {
+        width: 150px;
+        padding: 9px 10px;
+        background-color: #d10404;
+        color: #fff;
+        border-radius: 25px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.4rem;
+        transition: all 0.3s ease-in; }
+        .main-content .features-section .detailed-stats-article__content-details__btn:hover {
+          background-color: #fa0e0e; }
+        .main-content .features-section .detailed-stats-article__content-details__btn:active {
+          transform: scale(0.95);
+          background-color: #3b0101; }
     .main-content .features-section .detailed-stats-article__graphic {
-      width: 100%; }
+      width: 100%;
+      align-self: center; }
+    .main-content .features-section .grow-profit-article_layer {
+      max-width: 400px;
+      /* Put this on top of the blurred layer */
+      position: relative;
+      align-items: center;
+      z-index: 100;
+      padding: 2px;
+      background: rgba(167, 0, 0, 0.25);
+      width: 100%;
+      list-style-type: none;
+      border-radius: 16px;
+      margin-right: 10px;
+      margin-bottom: 10px; }
+    .main-content .features-section .grow-profit-article_layer-2 {
+      max-width: 400px;
+      /* Put this on top of the blurred layer */
+      position: relative;
+      align-items: center;
+      z-index: 100;
+      padding: 20px;
+      background: rgba(54, 54, 54, 0.75);
+      border: 2px solid black;
+      width: 100%;
+      list-style-type: none;
+      border-radius: 16px;
+      margin-right: 10px; }
     .main-content .features-section .grow-profit-article__content {
       width: 100%;
       margin-bottom: 50px;
@@ -713,8 +872,55 @@
         .main-content .features-section .grow-profit-article__content__btn:active {
           transform: scale(0.95);
           background-color: #3b0101; }
+    .main-content .features-section .grow-profit-article__content-details {
+      max-width: 900px;
+      /* Put this on top of the blurred layer */
+      position: relative;
+      align-items: center;
+      z-index: 100;
+      padding: 2px;
+      list-style-type: none;
+      border-radius: 16px;
+      height: 45px;
+      margin-right: 10px;
+      width: 400px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      display: inline;
+      flex-direction: row; }
+      .main-content .features-section .grow-profit-article__content-details__title {
+        font-size: 2rem; }
+      .main-content .features-section .grow-profit-article__content-details__description {
+        font-size: 1.4rem;
+        width: 100%;
+        margin: 5px auto; }
+        .main-content .features-section .grow-profit-article__content-details__description span {
+          font-size: 1.7rem;
+          font-weight: 800;
+          color: #d60101; }
+      .main-content .features-section .grow-profit-article__content-details__btn {
+        width: 150px;
+        padding: 9px 10px;
+        background-color: #d10404;
+        color: #fff;
+        border-radius: 25px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.4rem;
+        transition: all 0.3s ease-in; }
+        .main-content .features-section .grow-profit-article__content-details__btn:hover {
+          background-color: #fa0e0e; }
+        .main-content .features-section .grow-profit-article__content-details__btn:active {
+          transform: scale(0.95);
+          background-color: #3b0101; }
     .main-content .features-section .grow-profit-article__graphic {
-      width: 100%; }
+      margin-top: 3px;
+      width: 95%;
+      border-radius: 34px; }
 
 .cta-section {
   width: 80%;
@@ -900,7 +1106,7 @@
 
   .visibledesktop {
     display: none; } }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 520px) {
   .cover {
     object-fit: cover;
     width: 100vw; }
@@ -977,9 +1183,9 @@
       .main-header-content-principal_gen-box img {
         width: 100vw; }
       .main-header-content-principal_gen-box_img-box {
+        margin-left: 1vw;
         align-self: center;
-        margin: 4vw;
-        width: 100vw;
+        width: 90vw;
         height: 100%; }
 
   .main-header-content-container {
@@ -1034,22 +1240,45 @@
   .main-content .features-section .invest-smart-article, .main-content .features-section .detailed-stats-article, .main-content .features-section .grow-profit-article {
     justify-content: space-between;
     margin-bottom: 75px; }
+    .main-content .features-section .invest-smart-article_layer {
+      margin-right: 0px; }
+    .main-content .features-section .invest-smart-article_layer-2 {
+      margin-left: -60px; }
+    .main-content .features-section .invest-smart-article_layer-container {
+      margin-top: 10px;
+      margin-right: -60px; }
     .main-content .features-section .invest-smart-article__content {
-      width: 45%;
+      width: 100%;
       margin: 40px 0;
+      margin-left: 60px;
       justify-content: flex-start;
       text-align: left; }
       .main-content .features-section .invest-smart-article__content__title {
-        font-size: 2.6rem; }
+        font-size: 2.6rem;
+        margin-left: 20px; }
       .main-content .features-section .invest-smart-article__content__description {
-        margin: 25px 0; }
+        margin-left: 20px; }
+      .main-content .features-section .invest-smart-article__content__btn {
+        margin-left: 20px; }
     .main-content .features-section .invest-smart-article__graphic {
       width: 50%; }
-  .main-content .features-section .detailed-stats-article {
+  .main-content .features-section .detailed-stats-article, .main-content .features-section .grow-profit-article {
     justify-content: space-between;
     margin-bottom: 75px; }
+    .main-content .features-section .detailed-stats-article_layer {
+      margin-top: 10px;
+      margin-left: -50px;
+      height: 250px; }
+    .main-content .features-section .detailed-stats-article_layer-2 {
+      margin-right: -60px;
+      margin-left: 20vw; }
+    .main-content .features-section .detailed-stats-article__content-details {
+      margin-top: 60px; }
+      .main-content .features-section .detailed-stats-article__content-details__description {
+        margin-left: 30px;
+        width: 70vw; }
     .main-content .features-section .detailed-stats-article__content {
-      width: 40%;
+      width: 100%;
       margin: 40px 0;
       justify-content: flex-start;
       text-align: left; }
@@ -1058,21 +1287,39 @@
       .main-content .features-section .detailed-stats-article__content__description {
         margin: 25px 0; }
     .main-content .features-section .detailed-stats-article__graphic {
-      width: 55%;
-      order: -1; }
+      width: 70%; }
   .main-content .features-section .grow-profit-article {
     justify-content: space-between; }
+    .main-content .features-section .grow-profit-article_layer {
+      margin-top: 10px;
+      margin-right: -60px;
+      margin-left: 20vw; }
+    .main-content .features-section .grow-profit-article_layer-2 {
+      margin-left: -60px; }
+    .main-content .features-section .grow-profit-article_layer-container {
+      margin-top: 10px; }
+    .main-content .features-section .grow-profit-article__content-details__description {
+      margin-right: 20vw;
+      width: 70vw;
+      max-width: 280px; }
     .main-content .features-section .grow-profit-article__content {
-      width: 45%;
+      width: 100%;
       margin: 40px 0;
+      margin-left: 10px;
       justify-content: flex-start;
       text-align: left; }
       .main-content .features-section .grow-profit-article__content__title {
-        font-size: 2.6rem; }
+        font-size: 2.6rem;
+        margin-left: 5vw; }
+      .main-content .features-section .grow-profit-article__content__btn {
+        margin-left: 5vw; }
       .main-content .features-section .grow-profit-article__content__description {
-        margin: 25px 0; }
+        margin: 25px 0;
+        margin-left: 5vw;
+        width: 40vw; }
     .main-content .features-section .grow-profit-article__graphic {
-      width: 55%; }
+      width: 80%;
+      margin-right: 10vw; }
 
   .cta-section {
     max-width: 750px;
@@ -1209,12 +1456,12 @@
       width: 50px; }
     .main-content .features-section .invest-smart-article__pool {
       width: 100px; }
-  .main-content .features-section .detailed-stats-article {
+  .main-content .features-section .detailed-stats-article, .main-content .features-section .grow-profit-article {
     justify-content: space-between;
     margin-bottom: 75px; }
     .main-content .features-section .detailed-stats-article__content {
-      width: 40%;
-      margin: 40px 0;
+      width: 350px;
+      margin: 10px 0;
       justify-content: flex-start;
       text-align: left; }
       .main-content .features-section .detailed-stats-article__content__title {
@@ -1222,13 +1469,13 @@
       .main-content .features-section .detailed-stats-article__content__description {
         margin: 25px 0; }
     .main-content .features-section .detailed-stats-article__graphic {
-      width: 55%;
+      width: 100%;
       order: -1; }
   .main-content .features-section .grow-profit-article {
     justify-content: space-between; }
     .main-content .features-section .grow-profit-article__content {
-      width: 45%;
-      margin: 40px 0;
+      width: 100%;
+      margin: 10px 0;
       justify-content: flex-start;
       text-align: left; }
       .main-content .features-section .grow-profit-article__content__title {
@@ -1236,7 +1483,7 @@
       .main-content .features-section .grow-profit-article__content__description {
         margin: 25px 0; }
     .main-content .features-section .grow-profit-article__graphic {
-      width: 55%; }
+      width: 95%; }
 
   .cta-section {
     max-width: 750px;
@@ -1348,7 +1595,7 @@
       justify-content: space-evenly;
       margin-bottom: 120px; }
       .main-content .features-section .invest-smart-article__content {
-        width: 600px;
+        width: 400px;
         margin: 0; }
         .main-content .features-section .invest-smart-article__content__title {
           font-size: 3rem; }
@@ -1356,12 +1603,12 @@
           font-size: 1.8rem; }
         .main-content .features-section .invest-smart-article__content__btn {
           padding: 15px 10px; }
-    .main-content .features-section .detailed-stats-article {
+    .main-content .features-section .detailed-stats-article, .main-content .features-section .grow-profit-article {
       max-width: 1100px;
       justify-content: space-evenly;
       margin-bottom: 50px; }
       .main-content .features-section .detailed-stats-article__content {
-        width: 450px;
+        width: 100%;
         margin: 0; }
         .main-content .features-section .detailed-stats-article__content__title {
           font-size: 3rem; }
@@ -1370,7 +1617,7 @@
         .main-content .features-section .detailed-stats-article__content__btn {
           padding: 15px 10px; }
       .main-content .features-section .detailed-stats-article__content-details {
-        width: 200px;
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -1389,7 +1636,7 @@
       justify-content: space-evenly;
       margin-bottom: 120px; }
       .main-content .features-section .grow-profit-article__content {
-        width: 35%;
+        width: 100%;
         margin: 0; }
         .main-content .features-section .grow-profit-article__content__title {
           font-size: 3rem; }

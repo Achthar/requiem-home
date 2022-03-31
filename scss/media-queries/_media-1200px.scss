@@ -113,7 +113,7 @@
         justify-content: space-evenly;
         margin-bottom: 120px;
         &__content {
-          width: 600px;
+          width: 400px;
           margin: 0;
           &__title {
             font-size: 3rem;
@@ -131,7 +131,7 @@
         justify-content: space-evenly;
         margin-bottom: 50px;
         &__content {
-          width: 450px;
+          width: 100%;
           margin: 0;
           &__title {
             font-size: 3rem;
@@ -144,7 +144,7 @@
           }
         }
         &__content-details {
-          width: 200px;
+          width: 100%;
           @include flexbox;
           flex-direction: row;
           &__title {
@@ -165,7 +165,7 @@
         justify-content: space-evenly;
         margin-bottom: 120px;
         &__content {
-          width: 35%;
+          width: 100%;
           margin: 0;
           &__title {
             font-size: 3rem;
