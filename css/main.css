@@ -155,7 +155,7 @@
         align-items: center;
         z-index: 100;
         padding: 2px;
-        background: rgba(78, 78, 78, 0.5);
+        background: rgba(0, 0, 0, 0.75);
         order: 2;
         width: 100%;
         list-style-type: none;
@@ -229,7 +229,7 @@
       margin-right: -4000px;
       width: 100%;
       height: 100%;
-      border-bottom: 500px solid rgba(165, 0, 0, 0.5);
+      border-bottom: 500px solid rgba(0, 0, 0, 0.5);
       border-left: 90px solid transparent;
       height: 0px;
       width: 4000px; }
@@ -241,7 +241,7 @@
       margin-left: -4000px;
       width: 100%;
       height: 100%;
-      border-top: 500px solid rgba(78, 78, 78, 0.5);
+      border-top: 500px solid rgba(0, 0, 0, 0.75);
       border-right: 90px solid transparent;
       height: 0px;
       width: 4000px; }
@@ -273,7 +273,9 @@
             color: #bd0000; }
         .main-header-content-principal_gen-box_img-box_description-bottom {
           margin-top: 5px;
-          margin-left: 0px;
+          margin-left: -150px;
+          margin-right: 10px;
+          width: 300px;
           color: #e0e0e0;
           text-align: left;
           font-size: 1.9rem; }
@@ -503,12 +505,12 @@
         padding: 30px 0 15px;
         margin-bottom: 50px;
         border-radius: 20px;
-        background-color: rgba(78, 78, 78, 0.5);
+        background-color: rgba(0, 0, 0, 0.75);
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3), 1px -1px 2px rgba(0, 0, 0, 0.4);
         cursor: pointer;
         transition: all 0.3s ease-in; }
         .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:hover {
-          background-color: rgba(165, 0, 0, 0.5);
+          background-color: rgba(0, 0, 0, 0.5);
           color: #fff;
           transform: scale(1.05); }
           .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:hover p {
@@ -581,16 +583,46 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 75px; }
-      .main-content .features-section .invest-smart-article_relative-container {
-        transition: all 0.3s ease-in;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
+      .main-content .features-section .invest-smart-article_stripe-container {
+        flex-direction: column; }
+      .main-content .features-section .invest-smart-article_stripe-right {
         position: relative;
-        margin-right: 20px;
-        align-items: center;
-        align-self: center; }
+        flex-direction: row;
+        align-self: center;
+        align-items: flex-start;
+        margin-right: -4000px;
+        margin-left: 95px;
+        height: 100%;
+        border-bottom: 250px solid rgba(0, 0, 0, 0.5);
+        border-left: 90px solid transparent;
+        height: 0px;
+        width: 4000px; }
+      .main-content .features-section .invest-smart-article_stripe-right-1 {
+        position: relative;
+        flex-direction: row;
+        align-self: center;
+        align-items: flex-end;
+        margin-top: 10px;
+        margin-right: -3950px;
+        width: 100%;
+        height: 100%;
+        border-bottom: 250px solid rgba(0, 0, 0, 0.5);
+        border-left: 90px solid transparent;
+        height: 0px;
+        width: 4000px; }
+      .main-content .features-section .invest-smart-article_stripe-left {
+        position: relative;
+        flex-direction: column;
+        align-self: center;
+        align-items: flex-end;
+        margin-left: -4000px;
+        margin-right: -700px;
+        width: 100%;
+        height: 100%;
+        border-top: 500px solid rgba(0, 0, 0, 0.75);
+        border-right: 170px solid transparent;
+        height: 0px;
+        width: 4000px; }
       .main-content .features-section .invest-smart-article_bg {
         /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
         position: absolute;
@@ -614,8 +646,8 @@
         align-items: center;
         z-index: 100;
         padding: 2px;
-        background: rgba(165, 0, 0, 0.5);
-        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        width: 350px;
         list-style-type: none;
         border-radius: 16px;
         margin-right: 10px;
@@ -627,17 +659,40 @@
         align-items: center;
         z-index: 100;
         padding: 20px;
-        background: rgba(78, 78, 78, 0.5);
+        background: rgba(0, 0, 0, 0.75);
         border: 2px solid black;
-        width: 100%;
+        width: 400px;
         list-style-type: none;
         border-radius: 16px;
-        margin-right: 10px; }
+        margin-right: -10px;
+        margin-left: -3500px; }
       .main-content .features-section .invest-smart-article_layer-container {
         margin: 5px; }
+      .main-content .features-section .invest-smart-article__content-container-left {
+        margin-right: 5px;
+        flex-direction: column;
+        margin-left: 3650px;
+        text-align: left;
+        margin-top: -450px; }
+      .main-content .features-section .invest-smart-article__content-container-right {
+        margin-right: 5px;
+        flex-direction: column;
+        margin-right: 3650px;
+        text-align: left;
+        margin-top: -450px; }
+      .main-content .features-section .invest-smart-article__content-container-images {
+        margin-left: 5px;
+        width: 200px; }
+      .main-content .features-section .invest-smart-article__content-container-right-1 {
+        margin-right: 5px;
+        flex-direction: column;
+        margin-right: 3650px;
+        text-align: left;
+        margin-top: 80px; }
       .main-content .features-section .invest-smart-article__content {
-        width: 100%;
+        width: 500px;
         margin-bottom: 50px;
+        margin-left: 4000px;
         background: rgba(54, 54, 54, 0.75);
         display: flex;
         flex-flow: row wrap;
@@ -688,8 +743,8 @@
           font-size: 2rem; }
         .main-content .features-section .invest-smart-article__content-details__description {
           font-size: 1.4rem;
-          width: 80%;
-          margin: 5px auto; }
+          width: 250px;
+          margin-left: 0px; }
           .main-content .features-section .invest-smart-article__content-details__description span {
             font-size: 1.7rem;
             font-weight: 800;
@@ -715,9 +770,34 @@
       .main-content .features-section .invest-smart-article__pair-pic {
         width: 100px; }
       .main-content .features-section .invest-smart-article__pool-pic {
+        margin-left: -100px;
         width: 200px; }
         .main-content .features-section .invest-smart-article__pool-pic img {
           width: 10px; }
+    .main-content .features-section .detailed-stats-article_stripe-right {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-end;
+      margin-right: -3700px;
+      width: 100%;
+      margin-left: -50px;
+      height: 100%;
+      border-top: 500px solid rgba(0, 0, 0, 0.75);
+      border-left: 90px solid transparent;
+      height: 0px;
+      width: 4200px; }
+    .main-content .features-section .detailed-stats-article_stripe-left {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-start;
+      margin-left: -3800px;
+      margin-right: -100px;
+      border-bottom: 500px solid rgba(0, 0, 0, 0.5);
+      border-right: 90px solid transparent;
+      height: 0px;
+      width: 4300px; }
     .main-content .features-section .detailed-stats-article_layer {
       max-width: 400px;
       /* Put this on top of the blurred layer */
@@ -725,12 +805,13 @@
       align-items: center;
       z-index: 100;
       padding: 2px;
-      background: rgba(165, 0, 0, 0.5);
       width: 100%;
       list-style-type: none;
       border-radius: 16px;
       margin-right: 10px;
       margin-bottom: 10px;
+      margin-left: 4000px;
+      margin-top: 10px;
       height: 400px; }
     .main-content .features-section .detailed-stats-article_layer-2 {
       max-width: 400px;
@@ -738,9 +819,8 @@
       position: relative;
       align-items: center;
       z-index: 100;
+      margin-top: -400px;
       padding: 20px;
-      background: rgba(78, 78, 78, 0.5);
-      border: 2px solid black;
       width: 100%;
       list-style-type: none;
       border-radius: 16px;
@@ -784,7 +864,8 @@
       list-style-type: none;
       border-radius: 16px;
       height: 45px;
-      margin-right: 10px;
+      margin-right: 100px;
+      margin-left: -200px;
       width: 400px;
       margin-bottom: 10px;
       display: flex;
@@ -822,6 +903,30 @@
     .main-content .features-section .detailed-stats-article__graphic {
       width: 100%;
       align-self: center; }
+    .main-content .features-section .grow-profit-article_stripe-right {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-end;
+      margin-right: -3700px;
+      width: 100%;
+      margin-left: -50px;
+      height: 100%;
+      border-bottom: 500px solid rgba(0, 0, 0, 0.5);
+      border-left: 90px solid transparent;
+      height: 0px;
+      width: 4200px; }
+    .main-content .features-section .grow-profit-article_stripe-left {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-start;
+      margin-left: -3800px;
+      margin-right: -100px;
+      border-top: 500px solid rgba(0, 0, 0, 0.75);
+      border-right: 90px solid transparent;
+      height: 0px;
+      width: 4300px; }
     .main-content .features-section .grow-profit-article_layer {
       max-width: 400px;
       /* Put this on top of the blurred layer */
@@ -829,7 +934,6 @@
       align-items: center;
       z-index: 100;
       padding: 2px;
-      background: rgba(165, 0, 0, 0.5);
       width: 100%;
       list-style-type: none;
       border-radius: 16px;
@@ -842,19 +946,18 @@
       align-items: center;
       z-index: 100;
       padding: 20px;
-      background: rgba(78, 78, 78, 0.5);
-      border: 2px solid black;
       width: 100%;
       list-style-type: none;
       border-radius: 16px;
       margin-right: 10px; }
     .main-content .features-section .grow-profit-article__content {
-      width: 100%;
+      align-items: flex-start;
+      flex-direction: column;
       margin-bottom: 50px;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center; }
+      margin-top: -450px;
+      margin-left: 4000px;
+      height: 400px;
+      margin-right: 10px; }
       .main-content .features-section .grow-profit-article__content__title {
         font-size: 2rem; }
       .main-content .features-section .grow-profit-article__content__description {
@@ -1180,7 +1283,7 @@
       align-items: flex-end;
       width: 100%;
       height: 100%;
-      border-bottom: 500px solid rgba(165, 0, 0, 0.5);
+      border-bottom: 500px solid rgba(0, 0, 0, 0.5);
       border-left: 90px solid transparent;
       height: 0px;
       width: 4000px; }
@@ -1192,7 +1295,7 @@
       margin-left: -3500px;
       width: 100%;
       height: 100%;
-      border-top: 500px solid rgba(78, 78, 78, 0.5);
+      border-top: 500px solid rgba(0, 0, 0, 0.75);
       border-right: 90px solid transparent;
       height: 0px;
       width: 4000px; }
@@ -1387,7 +1490,7 @@
       justify-content: space-between; } }
 @media screen and (min-width: 768px) {
   .layer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to left, black, rgba(129, 129, 129, 0.6) 50%, rgba(129, 129, 129, 0.6) 50%, black 100%);
     position: fixed;
     top: 0;
     align-self: center;
@@ -1404,6 +1507,7 @@
     width: 100vw;
     height: 200px; }
 
+  s
   .header-container {
     max-width: 80%; }
 
@@ -1517,9 +1621,6 @@
   .main-content .features-section .grow-profit-article {
     justify-content: space-between; }
     .main-content .features-section .grow-profit-article__content {
-      width: 100%;
-      margin: 10px 0;
-      justify-content: flex-start;
       text-align: left; }
       .main-content .features-section .grow-profit-article__content__title {
         font-size: 2.6rem; }
@@ -1678,15 +1779,12 @@
       max-width: 1100px;
       justify-content: space-evenly;
       margin-bottom: 120px; }
-      .main-content .features-section .grow-profit-article__content {
-        width: 100%;
-        margin: 0; }
-        .main-content .features-section .grow-profit-article__content__title {
-          font-size: 3rem; }
-        .main-content .features-section .grow-profit-article__content__description {
-          font-size: 1.8rem; }
-        .main-content .features-section .grow-profit-article__content__btn {
-          padding: 15px 10px; }
+      .main-content .features-section .grow-profit-article__content__title {
+        font-size: 3rem; }
+      .main-content .features-section .grow-profit-article__content__description {
+        font-size: 1.8rem; }
+      .main-content .features-section .grow-profit-article__content__btn {
+        padding: 15px 10px; }
 
   .cta-section {
     max-width: 850px; }

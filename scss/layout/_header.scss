@@ -295,7 +295,9 @@
         }
         &_description-bottom {
           margin-top: 5px;
-          margin-left: 0px;
+          margin-left: -150px;
+          margin-right: 10px;
+          width: 300px;
           color: $text-bright;
           // p {
           text-align: left;
