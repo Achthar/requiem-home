@@ -89,12 +89,36 @@
         width: 90%;
         max-width: 750px;
         @include flexbox($jtf: space-between);
+        flex-wrap: nowrap;
+        &_img-container{
+          width: 400px;
+          // margin-left: 300px;
+        }
+        &_swap-img {
+          z-index: 3;
+          width: 300px;
+          height: 100%;
+          border-radius: 16px;
+          margin-right: -600px;
+          margin-left: -90px;
+          margin-bottom: -70px;
+
+        }
+        &_liq-img {
+          z-index: 2;
+          width: 300px;
+          height: 100%;
+          border-radius: 16px;
+          margin-right: -300px;
+          margin-left: 50px;
+        }
+
         &__content {
-          width: 45%;
+          width: 200px;
           order: 1;
           @include flexbox($jtf: flex-start);
           text-align: left;
-          margin: 25px 0;
+          margin-left: 25px;
         }
         &__illustration {
           width: 55%;

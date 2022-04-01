@@ -28,6 +28,15 @@
       width: 80%;
       @include flexbox($flow: column nowrap);
       margin-bottom: 75px;
+      &_icon {
+        width: 80px;
+        height: 100%;
+        z-index: 3;
+        filter:  contrast(160%) invert(100%);
+        background-color: rgba(0, 255, 255, 0.2);
+        border-radius: 50px;
+      }
+
       &__reference {
         width: 50%;
         margin-bottom: 40px;
@@ -39,6 +48,8 @@
           font-size: 35px;
           padding: 20px;
           border-radius: 50%;
+          width: 100px;
+          height: 100px;
         }
         &__title {
           font-size: 2.5rem;
@@ -55,6 +66,35 @@
       width: 80%;
       max-width: 400px;
       margin-bottom: 75px;
+      align-items: flex-start;
+      flex-flow: row nowrap;
+      &_img-container {
+        align-self: left;
+        width: 400px;
+        z-index: 1;
+        align-items: flex-end;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-left: 100px;
+      }
+
+      &_swap-img {
+        z-index: 2;
+        width: 300px;
+        height: 100%;
+        border-radius: 16px;
+        margin-right: -600px;
+        margin-left: -90px;
+        margin-bottom: -50px;
+      }
+      &_liq-img {
+        z-index: 3;
+        width: 300px;
+        height: 100%;
+        border-radius: 16px;
+        margin-right: -300px;
+        margin-left: 50px;
+      }
 
       &__content {
         width: 100%;
@@ -405,6 +445,12 @@
           width: 80%;
           margin: 25px auto;
         }
+
+        &__description-alt {
+          font-size: 1.4rem;
+          width: 80%;
+          margin: 25px auto;
+        }
         &__btn {
           @include button;
           transition: all 0.3s ease-in;
@@ -439,6 +485,18 @@
           font-size: 2rem;
         }
         &__description {
+          font-size: 1.4rem;
+          width: 250px;
+          margin-left: 0px;
+          // margin: 5px auto;
+          span {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: $emphasize-description-txt-color;
+          }
+        }
+
+        &__description-alt {
           font-size: 1.4rem;
           width: 250px;
           margin-left: 0px;
@@ -547,8 +605,9 @@
       }
 
       &__content {
-        width: 100%;
+        width: 350px;
         margin-bottom: 50px;
+        margin-top: -400px;
         @include flexbox;
         &__title {
           font-size: 2rem;
@@ -625,7 +684,6 @@
     .grow-profit-article {
       @extend .detailed-stats-article;
 
-
       &_stripe-right {
         position: relative;
         flex-direction: column;
@@ -656,7 +714,6 @@
         height: 0px;
         width: 4300px;
       }
-
 
       &_layer {
         max-width: 400px;
@@ -694,10 +751,10 @@
       &__content {
         align-items: flex-start;
         flex-direction: column;
-        // width: 100%;
-        margin-bottom: 50px;  
+        width: 250px;
+        margin-bottom: 50px;
         margin-top: -450px;
-        margin-left: 4000px;
+        margin-left: 3900px;
         height: 400px;
         margin-right: 10px;
         // @include flexbox;
@@ -775,16 +832,18 @@
   }
 }
 
+// here is the content for the rotation of the coin images
+
+$top-margin: 205px;
 
 .saturn {
-    
   /* 
    * Make the initial position to be the center of the circle you want this
    * object follow.
    */
   position: absolute;
   // left: 315px;
-  top: 200px;
+  top: $top-margin;
 
   /*
    * Sets up the animation duration, timing-function (or easing)
@@ -792,14 +851,11 @@
    * prefixes as well as the official syntax for now. Remember, tools like 
    * CSS Please are your friends!
    */
-  -webkit-animation: myOrbit 10s linear infinite; /* Chrome, Safari 5 */
-     -moz-animation: myOrbit 10s linear infinite; /* Firefox 5-15 */
-       -o-animation: myOrbit 10s linear infinite; /* Opera 12+ */
-          animation: myOrbit 10s linear infinite; /* Chrome, Firefox 16+, 
+  -webkit-animation: myOrbit 15s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: myOrbit 15s linear infinite; /* Firefox 5-15 */
+  -o-animation: myOrbit 15s linear infinite; /* Opera 12+ */
+  animation: myOrbit 15s linear infinite; /* Chrome, Firefox 16+, 
                                                     IE 10+, Safari 5 */
-  
-  
-  
 }
 
 /*
@@ -808,36 +864,49 @@
 * points.  Again, remember your vendor-specific prefixes for now!
 */
 @-webkit-keyframes myOrbit {
-  from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-  to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+  from {
+    -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
 }
 
 @-moz-keyframes myOrbit {
-  from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-  to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+  from {
+    -moz-transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
 }
 
 @-o-keyframes myOrbit {
-  from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-  to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+  from {
+    -o-transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
 }
 
 @keyframes myOrbit {
-  from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
 }
 
-
-
 .saturn1 {
-    
   /* 
    * Make the initial position to be the center of the circle you want this
    * object follow.
    */
   position: absolute;
   // left: 315px;
-  top: 200px;
+  top: $top-margin;
 
   /*
    * Sets up the animation duration, timing-function (or easing)
@@ -845,14 +914,11 @@
    * prefixes as well as the official syntax for now. Remember, tools like 
    * CSS Please are your friends!
    */
-  -webkit-animation: myOrbit1 10s linear infinite; /* Chrome, Safari 5 */
-     -moz-animation: myOrbit1 10s linear infinite; /* Firefox 5-15 */
-       -o-animation: myOrbit1 10s linear infinite; /* Opera 12+ */
-          animation: myOrbit1 10s linear infinite; /* Chrome, Firefox 16+, 
+  -webkit-animation: myOrbit1 15s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: myOrbit1 15s linear infinite; /* Firefox 5-15 */
+  -o-animation: myOrbit1 15s linear infinite; /* Opera 12+ */
+  animation: myOrbit1 15s linear infinite; /* Chrome, Firefox 16+, 
                                                     IE 10+, Safari 5 */
-  
-  
-  
 }
 
 /*
@@ -861,35 +927,49 @@
 * points.  Again, remember your vendor-specific prefixes for now!
 */
 @-webkit-keyframes myOrbit1 {
-  from { -webkit-transform: rotate(0deg) translateX(-150px) rotate(0deg); }
-  to   { -webkit-transform: rotate(360deg) translateX(-150px) rotate(-360deg); }
+  from {
+    -webkit-transform: rotate(0deg) translateX(-150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+  }
 }
 
 @-moz-keyframes myOrbit1 {
-  from { -moz-transform: rotate(0deg) translateX(-150px) rotate(0deg); }
-  to   { -moz-transform: rotate(360deg) translateX(-150px) rotate(-360deg); }
+  from {
+    -moz-transform: rotate(0deg) translateX(-150px) rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+  }
 }
 
 @-o-keyframes myOrbit1 {
-  from { -o-transform: rotate(0deg) translateX(-150px) rotate(0deg); }
-  to   { -o-transform: rotate(360deg) translateX(-150px) rotate(-360deg); }
+  from {
+    -o-transform: rotate(0deg) translateX(-150px) rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+  }
 }
 
 @keyframes myOrbit1 {
-  from { transform: rotate(0deg) translateX(-150px) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(-150px) rotate(-360deg); }
+  from {
+    transform: rotate(0deg) translateX(-150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+  }
 }
 
-
 .saturn2 {
-    
   /* 
    * Make the initial position to be the center of the circle you want this
    * object follow.
    */
   position: absolute;
   // left: 315px;
-  top: 200px;
+  top: $top-margin;
 
   /*
    * Sets up the animation duration, timing-function (or easing)
@@ -897,14 +977,11 @@
    * prefixes as well as the official syntax for now. Remember, tools like 
    * CSS Please are your friends!
    */
-  -webkit-animation: myOrbit2 10s linear infinite; /* Chrome, Safari 5 */
-     -moz-animation: myOrbit2 10s linear infinite; /* Firefox 5-15 */
-       -o-animation: myOrbit2 10s linear infinite; /* Opera 12+ */
-          animation: myOrbit2 10s linear infinite; /* Chrome, Firefox 16+, 
+  -webkit-animation: myOrbit2 15s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: myOrbit2 15s linear infinite; /* Firefox 5-15 */
+  -o-animation: myOrbit2 15s linear infinite; /* Opera 12+ */
+  animation: myOrbit2 15s linear infinite; /* Chrome, Firefox 16+, 
                                                     IE 10+, Safari 5 */
-  
-  
-  
 }
 
 /*
@@ -913,36 +990,49 @@
 * points.  Again, remember your vendor-specific prefixes for now!
 */
 @-webkit-keyframes myOrbit2 {
-  from { -webkit-transform: rotate(0deg) translateY(-150px) rotate(0deg); }
-  to   { -webkit-transform: rotate(360deg) translateY(-150px) rotate(-360deg); }
+  from {
+    -webkit-transform: rotate(0deg) translateY(-150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateY(-150px) rotate(-360deg);
+  }
 }
 
 @-moz-keyframes myOrbit2 {
-  from { -moz-transform: rotate(0deg) translateY(-150px) rotate(0deg); }
-  to   { -moz-transform: rotate(360deg) translateY(-150px) rotate(-360deg); }
+  from {
+    -moz-transform: rotate(0deg) translateY(-150px) rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg) translateY(-150px) rotate(-360deg);
+  }
 }
 
 @-o-keyframes myOrbit2 {
-  from { -o-transform: rotate(0deg) translateY(-150px) rotate(0deg); }
-  to   { -o-transform: rotate(360deg) translateY(-150px) rotate(-360deg); }
+  from {
+    -o-transform: rotate(0deg) translateY(-150px) rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg) translateY(-150px) rotate(-360deg);
+  }
 }
 
 @keyframes myOrbit2 {
-  from { transform: rotate(0deg) translateY(-150px) rotate(0deg); }
-  to   { transform: rotate(360deg) translateY(-150px) rotate(-360deg); }
+  from {
+    transform: rotate(0deg) translateY(-150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateY(-150px) rotate(-360deg);
+  }
 }
 
-
-
 .saturn3 {
-    
   /* 
    * Make the initial position to be the center of the circle you want this
    * object follow.
    */
   position: absolute;
   // left: 315px;
-  top: 200px;
+  top: $top-margin;
 
   /*
    * Sets up the animation duration, timing-function (or easing)
@@ -950,14 +1040,11 @@
    * prefixes as well as the official syntax for now. Remember, tools like 
    * CSS Please are your friends!
    */
-  -webkit-animation: myOrbit3 10s linear infinite; /* Chrome, Safari 5 */
-     -moz-animation: myOrbit3 10s linear infinite; /* Firefox 5-15 */
-       -o-animation: myOrbit3 10s linear infinite; /* Opera 12+ */
-          animation: myOrbit3 10s linear infinite; /* Chrome, Firefox 16+, 
+  -webkit-animation: myOrbit3 15s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: myOrbit3 15s linear infinite; /* Firefox 5-15 */
+  -o-animation: myOrbit3 15s linear infinite; /* Opera 12+ */
+  animation: myOrbit3 15s linear infinite; /* Chrome, Firefox 16+, 
                                                     IE 10+, Safari 5 */
-  
-  
-  
 }
 
 /*
@@ -966,21 +1053,37 @@
 * points.  Again, remember your vendor-specific prefixes for now!
 */
 @-webkit-keyframes myOrbit3 {
-  from { -webkit-transform: rotate(0deg) translateY(150px) rotate(0deg); }
-  to   { -webkit-transform: rotate(360deg) translateY(150px) rotate(-360deg); }
+  from {
+    -webkit-transform: rotate(0deg) translateY(150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateY(150px) rotate(-360deg);
+  }
 }
 
 @-moz-keyframes myOrbit3 {
-  from { -moz-transform: rotate(0deg) translateY(150px) rotate(0deg); }
-  to   { -moz-transform: rotate(360deg) translateY(150px) rotate(-360deg); }
+  from {
+    -moz-transform: rotate(0deg) translateY(150px) rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg) translateY(150px) rotate(-360deg);
+  }
 }
 
 @-o-keyframes myOrbit3 {
-  from { -o-transform: rotate(0deg) translateY(150px) rotate(0deg); }
-  to   { -o-transform: rotate(360deg) translateY(150px) rotate(-360deg); }
+  from {
+    -o-transform: rotate(0deg) translateY(150px) rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg) translateY(150px) rotate(-360deg);
+  }
 }
 
 @keyframes myOrbit3 {
-  from { transform: rotate(0deg) translateY(150px) rotate(0deg); }
-  to   { transform: rotate(360deg) translateY(150px) rotate(-360deg); }
+  from {
+    transform: rotate(0deg) translateY(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateY(150px) rotate(-360deg);
+  }
 }

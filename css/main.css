@@ -389,6 +389,13 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 75px; }
+      .main-content .why-us-wrapper .stats-section_icon {
+        width: 80px;
+        height: 100%;
+        z-index: 3;
+        filter: contrast(160%) invert(100%);
+        background-color: rgba(0, 255, 255, 0.2);
+        border-radius: 50px; }
       .main-content .why-us-wrapper .stats-section__reference {
         width: 50%;
         margin-bottom: 40px;
@@ -398,7 +405,9 @@
           background-color: #fffcfc;
           font-size: 35px;
           padding: 20px;
-          border-radius: 50%; }
+          border-radius: 50%;
+          width: 100px;
+          height: 100px; }
         .main-content .why-us-wrapper .stats-section__reference__title {
           font-size: 2.5rem;
           margin: 15px auto; }
@@ -407,7 +416,32 @@
     .main-content .why-us-wrapper .why-us-section {
       width: 80%;
       max-width: 400px;
-      margin-bottom: 75px; }
+      margin-bottom: 75px;
+      align-items: flex-start;
+      flex-flow: row nowrap; }
+      .main-content .why-us-wrapper .why-us-section_img-container {
+        align-self: left;
+        width: 400px;
+        z-index: 1;
+        align-items: flex-end;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-left: 100px; }
+      .main-content .why-us-wrapper .why-us-section_swap-img {
+        z-index: 2;
+        width: 300px;
+        height: 100%;
+        border-radius: 16px;
+        margin-right: -600px;
+        margin-left: -90px;
+        margin-bottom: -50px; }
+      .main-content .why-us-wrapper .why-us-section_liq-img {
+        z-index: 3;
+        width: 300px;
+        height: 100%;
+        border-radius: 16px;
+        margin-right: -300px;
+        margin-left: 50px; }
       .main-content .why-us-wrapper .why-us-section__content {
         width: 100%;
         text-align: center; }
@@ -704,6 +738,10 @@
           font-size: 1.4rem;
           width: 80%;
           margin: 25px auto; }
+        .main-content .features-section .invest-smart-article__content__description-alt {
+          font-size: 1.4rem;
+          width: 80%;
+          margin: 25px auto; }
         .main-content .features-section .invest-smart-article__content__btn {
           width: 150px;
           padding: 9px 10px;
@@ -746,6 +784,14 @@
           width: 250px;
           margin-left: 0px; }
           .main-content .features-section .invest-smart-article__content-details__description span {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: #d60101; }
+        .main-content .features-section .invest-smart-article__content-details__description-alt {
+          font-size: 1.4rem;
+          width: 250px;
+          margin-left: 0px; }
+          .main-content .features-section .invest-smart-article__content-details__description-alt span {
             font-size: 1.7rem;
             font-weight: 800;
             color: #d60101; }
@@ -826,8 +872,9 @@
       border-radius: 16px;
       margin-right: 10px; }
     .main-content .features-section .detailed-stats-article__content {
-      width: 100%;
+      width: 350px;
       margin-bottom: 50px;
+      margin-top: -400px;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
@@ -954,9 +1001,10 @@
     .main-content .features-section .grow-profit-article__content {
       align-items: flex-start;
       flex-direction: column;
+      width: 250px;
       margin-bottom: 50px;
       margin-top: -450px;
-      margin-left: 4000px;
+      margin-left: 3900px;
       height: 400px;
       margin-right: 10px; }
       .main-content .features-section .grow-profit-article__content__title {
@@ -1037,22 +1085,22 @@
    * object follow.
    */
   position: absolute;
-  top: 200px;
+  top: 205px;
   /*
    * Sets up the animation duration, timing-function (or easing)
    * and iteration-count. Ensure you use the appropriate vendor-specific 
    * prefixes as well as the official syntax for now. Remember, tools like 
    * CSS Please are your friends!
    */
-  -webkit-animation: myOrbit 10s linear infinite;
+  -webkit-animation: myOrbit 15s linear infinite;
   /* Chrome, Safari 5 */
-  -moz-animation: myOrbit 10s linear infinite;
+  -moz-animation: myOrbit 15s linear infinite;
   /* Firefox 5-15 */
-  -o-animation: myOrbit 10s linear infinite;
+  -o-animation: myOrbit 15s linear infinite;
   /* Opera 12+ */
-  animation: myOrbit 10s linear infinite;
+  animation: myOrbit 15s linear infinite;
   /* Chrome, Firefox 16+, 
-    IE 10+, Safari 5 */ }
+            IE 10+, Safari 5 */ }
 
 /*
 * Set up the keyframes to actually describe the begining and end states of 
@@ -1085,22 +1133,22 @@
    * object follow.
    */
   position: absolute;
-  top: 200px;
+  top: 205px;
   /*
    * Sets up the animation duration, timing-function (or easing)
    * and iteration-count. Ensure you use the appropriate vendor-specific 
    * prefixes as well as the official syntax for now. Remember, tools like 
    * CSS Please are your friends!
    */
-  -webkit-animation: myOrbit1 10s linear infinite;
+  -webkit-animation: myOrbit1 15s linear infinite;
   /* Chrome, Safari 5 */
-  -moz-animation: myOrbit1 10s linear infinite;
+  -moz-animation: myOrbit1 15s linear infinite;
   /* Firefox 5-15 */
-  -o-animation: myOrbit1 10s linear infinite;
+  -o-animation: myOrbit1 15s linear infinite;
   /* Opera 12+ */
-  animation: myOrbit1 10s linear infinite;
+  animation: myOrbit1 15s linear infinite;
   /* Chrome, Firefox 16+, 
-   IE 10+, Safari 5 */ }
+           IE 10+, Safari 5 */ }
 
 /*
 * Set up the keyframes to actually describe the begining and end states of 
@@ -1133,22 +1181,22 @@
    * object follow.
    */
   position: absolute;
-  top: 200px;
+  top: 205px;
   /*
    * Sets up the animation duration, timing-function (or easing)
    * and iteration-count. Ensure you use the appropriate vendor-specific 
    * prefixes as well as the official syntax for now. Remember, tools like 
    * CSS Please are your friends!
    */
-  -webkit-animation: myOrbit2 10s linear infinite;
+  -webkit-animation: myOrbit2 15s linear infinite;
   /* Chrome, Safari 5 */
-  -moz-animation: myOrbit2 10s linear infinite;
+  -moz-animation: myOrbit2 15s linear infinite;
   /* Firefox 5-15 */
-  -o-animation: myOrbit2 10s linear infinite;
+  -o-animation: myOrbit2 15s linear infinite;
   /* Opera 12+ */
-  animation: myOrbit2 10s linear infinite;
+  animation: myOrbit2 15s linear infinite;
   /* Chrome, Firefox 16+, 
-   IE 10+, Safari 5 */ }
+           IE 10+, Safari 5 */ }
 
 /*
 * Set up the keyframes to actually describe the begining and end states of 
@@ -1181,22 +1229,22 @@
    * object follow.
    */
   position: absolute;
-  top: 200px;
+  top: 205px;
   /*
    * Sets up the animation duration, timing-function (or easing)
    * and iteration-count. Ensure you use the appropriate vendor-specific 
    * prefixes as well as the official syntax for now. Remember, tools like 
    * CSS Please are your friends!
    */
-  -webkit-animation: myOrbit3 10s linear infinite;
+  -webkit-animation: myOrbit3 15s linear infinite;
   /* Chrome, Safari 5 */
-  -moz-animation: myOrbit3 10s linear infinite;
+  -moz-animation: myOrbit3 15s linear infinite;
   /* Firefox 5-15 */
-  -o-animation: myOrbit3 10s linear infinite;
+  -o-animation: myOrbit3 15s linear infinite;
   /* Opera 12+ */
-  animation: myOrbit3 10s linear infinite;
+  animation: myOrbit3 15s linear infinite;
   /* Chrome, Firefox 16+, 
-   IE 10+, Safari 5 */ }
+           IE 10+, Safari 5 */ }
 
 /*
 * Set up the keyframes to actually describe the begining and end states of 
@@ -1408,6 +1456,15 @@
   .visibledesktop {
     display: none; } }
 @media screen and (min-width: 320px) and (max-width: 520px) {
+  .layer {
+    background: linear-gradient(to left, black, rgba(129, 129, 129, 0.6) 50%, rgba(129, 129, 129, 0.6) 50%, black 100%);
+    position: fixed;
+    top: 0;
+    align-self: center;
+    z-index: 0;
+    width: 100vw;
+    height: 10000px; }
+
   .cover {
     object-fit: cover;
     width: 100vw; }
@@ -1474,7 +1531,9 @@
       flex-direction: column;
       align-self: center;
       align-items: flex-end;
+      margin-left: -60px;
       width: 100%;
+      margin-right: -3800px;
       height: 100%;
       border-bottom: 500px solid rgba(0, 0, 0, 0.5);
       border-left: 90px solid transparent;
@@ -1485,7 +1544,7 @@
       flex-direction: column;
       align-self: center;
       align-items: flex-start;
-      margin-left: -3500px;
+      margin-left: -3600px;
       width: 100%;
       height: 100%;
       border-top: 500px solid rgba(0, 0, 0, 0.75);
@@ -1496,18 +1555,25 @@
       width: 50%; }
     .main-header-content-principal_header-content {
       align-self: center;
-      width: 90vw;
-      margin-left: 3500px;
+      width: 80vw;
+      margin-left: 3600px;
       margin-top: -450px; }
     .main-header-content-principal_gen-box {
       justify-content: flex-start; }
       .main-header-content-principal_gen-box img {
         width: 100vw; }
       .main-header-content-principal_gen-box_img-box {
-        margin-left: -40px;
+        margin-left: -20px;
         align-self: center;
         width: 90vw;
         height: 0p; }
+        .main-header-content-principal_gen-box_img-box_description-top {
+          margin-left: 50px;
+          margin-right: 0px;
+          font-size: 1.7rem; }
+        .main-header-content-principal_gen-box_img-box_description-bottom {
+          font-size: 1.7rem;
+          margin-left: 1px; }
 
   .main-header-content-container {
     justify-content: space-between;
@@ -1526,7 +1592,24 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    flex-flow: row nowrap; }
+    .main-content .why-us-wrapper .why-us-section_swap-img {
+      width: 120px;
+      height: 100%;
+      z-index: 3;
+      border-radius: 16px;
+      margin-right: -90px;
+      margin-left: 10px;
+      margin-bottom: 50px; }
+    .main-content .why-us-wrapper .why-us-section_liq-img {
+      margin-top: 50px;
+      z-index: 2;
+      width: 120px;
+      height: 100%;
+      border-radius: 16px;
+      margin-right: -70px;
+      margin-left: -100px; }
     .main-content .why-us-wrapper .why-us-section__content {
       width: 45%;
       order: 1;
@@ -1557,10 +1640,67 @@
     max-width: 1050px; }
   .main-content .features-section__title {
     font-size: 3rem;
-    max-width: 580px; }
+    max-width: 580px;
+    margin-top: -1000px;
+    margin-bottom: -1500px; }
   .main-content .features-section .invest-smart-article, .main-content .features-section .detailed-stats-article, .main-content .features-section .grow-profit-article {
     justify-content: space-between;
     margin-bottom: 75px; }
+    .main-content .features-section .invest-smart-article_stripe-container {
+      margin-top: 850px; }
+    .main-content .features-section .invest-smart-article_stripe-right {
+      text-align: right;
+      position: relative;
+      flex-direction: row;
+      align-self: center;
+      align-items: flex-start;
+      margin-right: -4000px;
+      margin-left: 95px;
+      height: 100%;
+      border-bottom: 250px solid rgba(0, 0, 0, 0.5);
+      border-left: 90px solid transparent;
+      height: 0px;
+      width: 4000px; }
+    .main-content .features-section .invest-smart-article_stripe-right-1 {
+      position: relative;
+      flex-direction: row;
+      align-self: center;
+      align-items: flex-end;
+      margin-top: 10px;
+      margin-right: -3550px;
+      width: 100%;
+      height: 100%;
+      border-bottom: 250px solid rgba(0, 0, 0, 0.5);
+      border-left: 90px solid transparent;
+      height: 0px;
+      width: 4000px; }
+      .main-content .features-section .invest-smart-article_stripe-right-1 img {
+        margin-left: 100px; }
+    .main-content .features-section .invest-smart-article_stripe-left {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-end;
+      margin-left: -3600px;
+      margin-right: -700px;
+      width: 100%;
+      height: 100%;
+      border-top: 300px solid rgba(0, 0, 0, 0.75);
+      border-right: 170px solid transparent;
+      height: 0px;
+      width: 4000px; }
+    .main-content .features-section .invest-smart-article__content-container-left {
+      margin-right: 5px;
+      flex-direction: column;
+      margin-left: 3650px;
+      text-align: left;
+      margin-top: -250px; }
+    .main-content .features-section .invest-smart-article__content-container-right {
+      margin-right: 5px;
+      flex-direction: column;
+      margin-right: 3650px;
+      text-align: left;
+      margin-top: -450px; }
     .main-content .features-section .invest-smart-article_layer {
       margin-right: 0px; }
     .main-content .features-section .invest-smart-article_layer-2 {
@@ -1568,6 +1708,18 @@
     .main-content .features-section .invest-smart-article_layer-container {
       margin-top: 10px;
       margin-right: -60px; }
+    .main-content .features-section .invest-smart-article__content-details_description {
+      margin-right: 5px;
+      text-align: left; }
+    .main-content .features-section .invest-smart-article__content-details__description-alt {
+      font-size: 1.4rem;
+      width: 250px;
+      margin-left: 40px;
+      text-align: left; }
+      .main-content .features-section .invest-smart-article__content-details__description-alt span {
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: #d60101; }
     .main-content .features-section .invest-smart-article__content {
       width: 100%;
       margin: 40px 0;
@@ -1586,21 +1738,50 @@
   .main-content .features-section .detailed-stats-article, .main-content .features-section .grow-profit-article {
     justify-content: space-between;
     margin-bottom: 75px; }
-    .main-content .features-section .detailed-stats-article_layer {
-      margin-top: 10px;
+    .main-content .features-section .detailed-stats-article_stripe-right {
+      margin-top: -40px;
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-end;
+      margin-right: -3700px;
       margin-left: -50px;
+      height: 100%;
+      border-top: 350px solid rgba(0, 0, 0, 0.75);
+      border-left: 90px solid transparent;
+      height: 0px;
+      width: 4200px; }
+    .main-content .features-section .detailed-stats-article_stripe-left {
+      margin-top: -20px;
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-start;
+      margin-left: -3900px;
+      margin-right: -100px;
+      border-bottom: 300px solid rgba(0, 0, 0, 0.5);
+      border-right: 90px solid transparent;
+      height: 0px;
+      width: 4300px; }
+    .main-content .features-section .detailed-stats-article_layer {
+      margin-top: 50px;
+      margin-left: 3950px;
       height: 250px; }
     .main-content .features-section .detailed-stats-article_layer-2 {
       margin-right: -60px;
       margin-left: 20vw; }
     .main-content .features-section .detailed-stats-article__content-details {
-      margin-top: 60px; }
+      margin-top: 60px;
+      height: 300px;
+      max-width: 300px; }
       .main-content .features-section .detailed-stats-article__content-details__description {
-        margin-left: 30px;
+        text-align: right;
+        margin-left: 10px;
         width: 70vw; }
     .main-content .features-section .detailed-stats-article__content {
-      width: 100%;
-      margin: 40px 0;
+      width: 60vw;
+      margin-top: -320px;
+      margin-left: 10px;
       justify-content: flex-start;
       text-align: left; }
       .main-content .features-section .detailed-stats-article__content__title {
@@ -1611,10 +1792,36 @@
       width: 70%; }
   .main-content .features-section .grow-profit-article {
     justify-content: space-between; }
+    .main-content .features-section .grow-profit-article_stripe-right {
+      margin-top: 10px;
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-end;
+      margin-right: -3600px;
+      width: 100%;
+      margin-left: -50px;
+      height: 100%;
+      border-bottom: 350px solid rgba(0, 0, 0, 0.5);
+      border-left: 90px solid transparent;
+      height: 0px;
+      width: 4200px; }
+    .main-content .features-section .grow-profit-article_stripe-left {
+      margin-bottom: 10px;
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-start;
+      margin-left: -3800px;
+      margin-right: -100px;
+      border-top: 300px solid rgba(0, 0, 0, 0.75);
+      border-right: 90px solid transparent;
+      height: 0px;
+      width: 4150px; }
     .main-content .features-section .grow-profit-article_layer {
       margin-top: 10px;
       margin-right: -60px;
-      margin-left: 20vw; }
+      margin-left: -20px; }
     .main-content .features-section .grow-profit-article_layer-2 {
       margin-left: -60px; }
     .main-content .features-section .grow-profit-article_layer-container {
@@ -1622,11 +1829,13 @@
     .main-content .features-section .grow-profit-article__content-details__description {
       margin-right: 20vw;
       width: 70vw;
-      max-width: 280px; }
+      max-width: 280px;
+      text-align: left;
+      margin-left: -20px; }
     .main-content .features-section .grow-profit-article__content {
-      width: 100%;
-      margin: 40px 0;
-      margin-left: 10px;
+      width: 60vw;
+      margin-top: -290px;
+      margin-left: 3850px;
       justify-content: flex-start;
       text-align: left; }
       .main-content .features-section .grow-profit-article__content__title {
@@ -1746,16 +1955,34 @@
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      flex-wrap: nowrap; }
+      .main-content .why-us-wrapper .why-us-section_img-container {
+        width: 400px; }
+      .main-content .why-us-wrapper .why-us-section_swap-img {
+        z-index: 3;
+        width: 300px;
+        height: 100%;
+        border-radius: 16px;
+        margin-right: -600px;
+        margin-left: -90px;
+        margin-bottom: -70px; }
+      .main-content .why-us-wrapper .why-us-section_liq-img {
+        z-index: 2;
+        width: 300px;
+        height: 100%;
+        border-radius: 16px;
+        margin-right: -300px;
+        margin-left: 50px; }
       .main-content .why-us-wrapper .why-us-section__content {
-        width: 45%;
+        width: 200px;
         order: 1;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: center;
         text-align: left;
-        margin: 25px 0; }
+        margin-left: 25px; }
       .main-content .why-us-wrapper .why-us-section__illustration {
         width: 55%; }
     .main-content .why-us-wrapper .benefits-section {
@@ -1888,6 +2115,23 @@
     .main-content .why-us-wrapper .why-us-section {
       width: 80%;
       max-width: 1200px; }
+      .main-content .why-us-wrapper .why-us-section_img-container {
+        margin-right: 100px; }
+      .main-content .why-us-wrapper .why-us-section_swap-img {
+        z-index: 2;
+        width: 300px;
+        height: 100%;
+        border-radius: 16px;
+        margin-right: -600px;
+        margin-left: -90px;
+        margin-bottom: -70px; }
+      .main-content .why-us-wrapper .why-us-section_liq-img {
+        z-index: 3;
+        width: 300px;
+        height: 100%;
+        border-radius: 16px;
+        margin-right: -100px;
+        margin-left: 50px; }
       .main-content .why-us-wrapper .why-us-section__content {
         width: 40%; }
         .main-content .why-us-wrapper .why-us-section__content__title {
@@ -1945,8 +2189,8 @@
       justify-content: space-evenly;
       margin-bottom: 50px; }
       .main-content .features-section .detailed-stats-article__content {
-        width: 100%;
-        margin: 0; }
+        width: 250px;
+        margin-top: -450px; }
         .main-content .features-section .detailed-stats-article__content__title {
           font-size: 3rem; }
         .main-content .features-section .detailed-stats-article__content__description {
