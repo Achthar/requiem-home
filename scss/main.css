@@ -784,7 +784,7 @@
 }
 
 .main-content .why-us-wrapper .why-us-section__content__title span {
-  color: #f95959;
+  color: #bd0000;
 }
 
 .main-content .why-us-wrapper .why-us-section__content__description {
@@ -828,6 +828,7 @@
 }
 
 .main-content .why-us-wrapper .benefits-section {
+  margin-top: 10px;
   width: 80%;
   max-width: 400px;
   text-align: center;
@@ -945,7 +946,7 @@
   padding: 30px 0 15px;
   margin-bottom: 50px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(90, 90, 90, 0.315);
   -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3), 1px -1px 2px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3), 1px -1px 2px rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -968,10 +969,16 @@
   color: #fff;
 }
 
+.main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:hover_icon {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  fill: white;
+}
+
 .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
-  background-color: #b30000;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card .fab {
@@ -995,6 +1002,12 @@
   height: 100%;
 }
 
+.main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card_icon :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  fill: white;
+}
+
 .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card__title {
   width: 100%;
   font-size: 2rem;
@@ -1009,7 +1022,7 @@
 
 .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card__description {
   font-size: 1.4rem;
-  color: #770000;
+  color: #e4e4e4;
   width: 70%;
 }
 

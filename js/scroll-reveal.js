@@ -109,6 +109,13 @@ ScrollReveal().reveal(".why-us-section__illustration", {
   distance: "3rem",
 });
 
+ScrollReveal().reveal(".why-us-section_img-container", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "3rem",
+});
+
 ScrollReveal().reveal(".why-us-section__content", {
   duration: 2000,
   delay: 500,
