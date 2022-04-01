@@ -1,6 +1,30 @@
 // --------  Media 768px  -------------
 
 @media screen and (min-width: 768px) {
+  .layer {
+    background-color: $background-color;
+    position: fixed;
+    top: 0;
+    // left: 10vw;
+    // right: 10vw;
+    align-self: center;
+    z-index: 0;
+    width: 100vw;
+    height: 10000px;
+  }
+
+  .header-layer {
+    background-color: $background-color-header;
+    position: absolute;
+    top: 0;
+    // left: 10vw;
+    // right: 10vw;
+    align-self: center;
+    z-index: 0;
+    width: 100vw;
+    height: 200px;
+  }
+
   // Main header styles
   .header-container {
     max-width: 80%;

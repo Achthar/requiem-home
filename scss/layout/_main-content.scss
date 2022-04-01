@@ -13,6 +13,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: -1;
     min-width: 100%;
     min-height: 100%;
   }
@@ -312,8 +313,8 @@
         border-radius: 16px;
         margin-right: 10px;
       }
-      &_layer-container{
-        margin:5px;
+      &_layer-container {
+        margin: 5px;
       }
       &__content {
         width: 100%;

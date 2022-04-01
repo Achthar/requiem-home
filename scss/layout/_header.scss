@@ -211,35 +211,51 @@
     text-align: center;
     z-index: 100;
 
-    &_header-content-bg {
-      /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      z-index: 99;
-      opacity: 0.5;
-      /* Pull the background 70px higher to the same place as #bg's */
-      background-position: center -70px;
-
-      -webkit-filter: blur(10px);
-      filter: url("/media/blur.svg#blur");
-      filter: blur(10px);
-    }
-
     &_header-content {
       /* Put this on top of the blurred layer */
       position: relative;
       align-self: center;
+      margin-left: 3500px;
+      margin-top: -450px;
       max-width: 400px;
+      // margin-right: 0px;
       z-index: 100;
       padding: 10px;
 
-      border: 1px solid black;
+      // border: 1px solid black;
       @include flexbox($jtf: space-evenly);
       border-radius: 16px;
-      background: rgba(54, 54, 54, 0.75);
+      // background: rgba(0, 0, 0, 0.5);
+    }
+
+    &_stripe-right {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-end;
+      margin-right: -4000px;
+      width: 100%;
+      // border-width: 0 0 100px 100px;
+      height: 100%;
+      border-bottom: 500px solid $background-color-box-sub;
+      border-left: 90px solid transparent;
+      height: 0px;
+      width: 4000px;
+    }
+
+    &_stripe-left {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-start;
+      margin-left: -4000px;
+      width: 100%;
+      // border-width: 0 0 100px 100px;
+      height: 100%;
+      border-top: 500px solid $background-color-box;
+      border-right: 90px solid transparent;
+      height: 0px;
+      width: 4000px;
     }
 
     &_gen-box {
@@ -256,20 +272,20 @@
         @include flexbox($jtf: space-between);
         flex-direction: column;
         align-self: center;
-        margin-left: 50px;
-        width: 100%;
+        // margin-left: 50px;
+        width: 400px;
         // border-width: 0 0 100px 100px;
-        height: 100%;
-        background: rgba(214, 214, 214, 0.795);
-        border-top: 4px solid rgb(99, 99, 99);
-        border-bottom: 4px solid rgb(99, 99, 99);
+        // height: 100%;
+        // background: $transparent-box-with-image;
+        // border-top: 4px solid rgb(99, 99, 99);
+        // border-bottom: 4px solid rgb(99, 99, 99);
         padding: 10px;
         border-radius: 16px;
         &_description-top {
           margin-bottom: 5px;
           margin-right: 0px;
           text-align: right;
-          color: rgb(43, 43, 43);
+          color: $text-bright;
           // p {
           font-size: 1.9rem;
           span {
@@ -280,7 +296,7 @@
         &_description-bottom {
           margin-top: 5px;
           margin-left: 0px;
-          color: rgb(43, 43, 43);
+          color: $text-bright;
           // p {
           text-align: left;
           span {

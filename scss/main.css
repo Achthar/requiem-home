@@ -261,7 +261,7 @@
           align-items: center;
   z-index: 100;
   padding: 2px;
-  background: rgba(54, 54, 54, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -343,31 +343,16 @@
   z-index: 100;
 }
 
-.main-header-content-principal_header-content-bg {
-  /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  z-index: 99;
-  opacity: 0.5;
-  /* Pull the background 70px higher to the same place as #bg's */
-  background-position: center -70px;
-  -webkit-filter: blur(10px);
-  filter: url("/media/blur.svg#blur");
-  filter: blur(10px);
-}
-
 .main-header-content-principal_header-content {
   /* Put this on top of the blurred layer */
   position: relative;
   -ms-flex-item-align: center;
       align-self: center;
+  margin-left: 3500px;
+  margin-top: -450px;
   max-width: 400px;
   z-index: 100;
   padding: 10px;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,7 +367,48 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 16px;
-  background: rgba(54, 54, 54, 0.75);
+}
+
+.main-header-content-principal_stripe-right {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: -4000px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 500px solid rgba(102, 0, 0, 0.5);
+  border-left: 90px solid transparent;
+  height: 0px;
+  width: 4000px;
+}
+
+.main-header-content-principal_stripe-left {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: -4000px;
+  width: 100%;
+  height: 100%;
+  border-top: 500px solid rgba(0, 0, 0, 0.5);
+  border-right: 90px solid transparent;
+  height: 0px;
+  width: 4000px;
 }
 
 .main-header-content-principal_gen-box {
@@ -423,12 +449,7 @@
       flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-left: 50px;
-  width: 100%;
-  height: 100%;
-  background: rgba(214, 214, 214, 0.795);
-  border-top: 4px solid #636363;
-  border-bottom: 4px solid #636363;
+  width: 400px;
   padding: 10px;
   border-radius: 16px;
 }
@@ -437,7 +458,7 @@
   margin-bottom: 5px;
   margin-right: 0px;
   text-align: right;
-  color: #2b2b2b;
+  color: #e0e0e0;
   font-size: 1.9rem;
 }
 
@@ -448,7 +469,7 @@
 .main-header-content-principal_gen-box_img-box_description-bottom {
   margin-top: 5px;
   margin-left: 0px;
-  color: #2b2b2b;
+  color: #e0e0e0;
   text-align: left;
   font-size: 1.9rem;
 }
@@ -626,6 +647,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1;
   min-width: 100%;
   min-height: 100%;
 }
@@ -865,7 +887,7 @@
   padding: 30px 0 15px;
   margin-bottom: 50px;
   border-radius: 20px;
-  background-color: rgba(54, 54, 54, 0.75);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3), 1px -1px 2px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3), 1px -1px 2px rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -874,7 +896,7 @@
 }
 
 .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card:hover {
-  background-color: rgba(167, 0, 0, 0.25);
+  background-color: rgba(102, 0, 0, 0.5);
   color: #fff;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -1049,7 +1071,7 @@
           align-items: center;
   z-index: 100;
   padding: 2px;
-  background: rgba(167, 0, 0, 0.25);
+  background: rgba(102, 0, 0, 0.5);
   width: 100%;
   list-style-type: none;
   border-radius: 16px;
@@ -1066,7 +1088,7 @@
           align-items: center;
   z-index: 100;
   padding: 20px;
-  background: rgba(54, 54, 54, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   border: 2px solid black;
   width: 100%;
   list-style-type: none;
@@ -1227,7 +1249,7 @@
           align-items: center;
   z-index: 100;
   padding: 2px;
-  background: rgba(167, 0, 0, 0.25);
+  background: rgba(102, 0, 0, 0.5);
   width: 100%;
   list-style-type: none;
   border-radius: 16px;
@@ -1245,7 +1267,7 @@
           align-items: center;
   z-index: 100;
   padding: 20px;
-  background: rgba(54, 54, 54, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   border: 2px solid black;
   width: 100%;
   list-style-type: none;
@@ -1392,7 +1414,7 @@
           align-items: center;
   z-index: 100;
   padding: 2px;
-  background: rgba(167, 0, 0, 0.25);
+  background: rgba(102, 0, 0, 0.5);
   width: 100%;
   list-style-type: none;
   border-radius: 16px;
@@ -1409,7 +1431,7 @@
           align-items: center;
   z-index: 100;
   padding: 20px;
-  background: rgba(54, 54, 54, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   border: 2px solid black;
   width: 100%;
   list-style-type: none;
@@ -1982,6 +2004,45 @@
             justify-content: flex-start;
     text-align: left;
   }
+  .main-header-content-principal_stripe-right {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    border-bottom: 500px solid rgba(102, 0, 0, 0.5);
+    border-left: 90px solid transparent;
+    height: 0px;
+    width: 4000px;
+  }
+  .main-header-content-principal_stripe-left {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: -3500px;
+    width: 100%;
+    height: 100%;
+    border-top: 500px solid rgba(0, 0, 0, 0.5);
+    border-right: 90px solid transparent;
+    height: 0px;
+    width: 4000px;
+  }
   .main-header-content-principal__illustration {
     width: 50%;
   }
@@ -1990,14 +2051,8 @@
         -ms-grid-row-align: center;
         align-self: center;
     width: 90vw;
-    margin: 1vw;
-  }
-  .main-header-content-principal_header-content-bg {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 90vw;
-    margin: 1vw;
+    margin-left: 3500px;
+    margin-top: -450px;
   }
   .main-header-content-principal_gen-box {
     -webkit-box-pack: start;
@@ -2008,12 +2063,12 @@
     width: 100vw;
   }
   .main-header-content-principal_gen-box_img-box {
-    margin-left: 1vw;
+    margin-left: -40px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     width: 90vw;
-    height: 100%;
+    height: 0p;
   }
   .main-header-content-container {
     -webkit-box-pack: justify;
@@ -2310,6 +2365,28 @@
 }
 
 @media screen and (min-width: 768px) {
+  .layer {
+    background-color: rgba(0, 0, 0, 0.267);
+    position: fixed;
+    top: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    z-index: 0;
+    width: 100vw;
+    height: 10000px;
+  }
+  .header-layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    z-index: 0;
+    width: 100vw;
+    height: 200px;
+  }
   .header-container {
     max-width: 80%;
   }

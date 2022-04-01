@@ -29,10 +29,13 @@
 </head>
 
 <body>
-    <div class="main-container" id="video">
+    <div class="main-container">
         <video autoplay muted loop id="video" width="100%">
             <source src="./assets/background/fractal2.0.mp4" type="video/mp4" />
         </video>
+        <div class="layer"> </div>
+        <!-- <div class="header-layer"> </div> -->
+
         <!-- Main header -->
         <header class="main-header">
             <div class="header-container">
@@ -52,7 +55,6 @@
                     <!-- </div> -->
                     <div class="main-header-navbar_relative-row">
                         <div class="main-header-navbar_relative-container">
-                            <div class="main-header-navbar__nav_bg"></div>
                             <div class="main-header-navbar__nav_layer">
                                 <div class="main-header-navbar__nav">
                                     <div class="main-header-navbar__nav__item">
@@ -92,30 +94,38 @@
 
                     <div class="main-header-content-principal">
                         <div class="main-header-content-principal_gen-box">
-                            <div class="main-header-content-principal_header-content">
-                                <h1 class="main-header-content-principal__title">
-                                    High <span>performance</span> DEX
-                                    for <span>trading</span>
-                                    and <span>investing</span>
-                                </h1>
+                            <div class="main-header-content-principal_stripe-left">
+                                <div class="main-header-content-principal_header-content">
+                                    <h1 class="main-header-content-principal__title">
+                                        High <span>performance</span> DEX
+                                        for <span>trading</span>
+                                        and <span>investing</span>
+                                    </h1>
 
-                                <p class="main-header-content-principal__description">
-                                    Universal Automated Market Maker with a multitude of earning opportunities.
-                                </p>
-                                <a href="https://app.requiem.finance/avax-test/exchange"
-                                    class="main-header-content-principal__btn">Go to Exchange<i
-                                        class="fas fa-angle-right"></i></a>
+                                    <p class="main-header-content-principal__description">
+                                        Universal Automated Market Maker with a multitude of earning opportunities.
+                                    </p>
+                                    <a href="https://app.requiem.finance/avax-test/exchange"
+                                        class="main-header-content-principal__btn">Go to Exchange<i
+                                            class="fas fa-angle-right"></i></a>
+                                </div>
                             </div>
-                            <div class="main-header-content-principal_gen-box_img-box">
-                                <p class="main-header-content-principal_gen-box_img-box_description-top" style="margin-right: 0px;">
-                                    The first token that is <span>performance-linked</span> to a decentralized exchange.
-                                </p>
-                                <img src="./assets/header-assets/requiem-circle.png" alt=""
-                                    style="width:320px;height:100%;" />
+                            <div class="main-header-content-principal_stripe-right">
+                                <div class="main-header-content-principal_gen-box_img-box">
+                                    <p class="main-header-content-principal_gen-box_img-box_description-top"
+                                        style="margin-right: 0px;">
+                                        The first token that is <span>performance-linked</span> to a decentralized
+                                        exchange.
+                                    </p>
+                                    <img src="./assets/header-assets/requiem-circle.png" alt=""
+                                        style="width:320px;height:100%;" />
 
-                                <p class="main-header-content-principal_gen-box_img-box_description-bottom" style="margin-left: 0; margin-right: auto;">
-                                    Allowing investors to <br/> <span>directly benefit</span> from the success of our project.
-                                </p>
+                                    <p class="main-header-content-principal_gen-box_img-box_description-bottom"
+                                        style="margin-left: 0; margin-right: auto;">
+                                        Allowing investors to <br /> <span>directly benefit</span> from the success of
+                                        our project.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
@@ -456,6 +466,7 @@
             </div>
         </footer>
     </div>
+
 </body>
 
 </html>

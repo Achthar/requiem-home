@@ -1,14 +1,21 @@
 // -------- Variables -------------
 
+$background-color: rgba(0, 0, 0, 0.267);
+$background-color-header: rgba(0, 0, 0, 0.5);
+
+
 $body-bg-color: linear-gradient(#4c0505 50%, #000000);
 $btn-bg-color: #d10404;
 $span-txt-color: #4b0000;
 $emphasize-txt-color: #bd0000;
 $description-txt-color: #e0e0e0;
+$text-dark: #000000;
+$text-bright: #e0e0e0;
 $emphasize-description-txt-color: #d60101;
-$background-color-box: rgba(54, 54, 54, 0.75);
-$background-color-box-sub:  rgba(167, 0, 0, 0.25);
+$background-color-box: rgba(0, 0, 0, 0.5);
+$background-color-box-sub: rgba(102, 0, 0, 0.5);
 $transparent-box-color: rgb(34, 34, 34);
+$transparent-box-with-image: rgba(124, 124, 124, 0.5);
 
 // Why us section
 $why-us-icon-color: #860505;

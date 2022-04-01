@@ -22,6 +22,23 @@ ScrollReveal().reveal(".main-header-content-principal__illustration", {
   distance: "2rem",
 });
 
+// long layer bars
+ScrollReveal().reveal(".main-header-content-principal_stripe-right", {
+  duration: 2000,
+  delay: 500,
+  origin: "right",
+  distance: "300px",
+});
+
+ScrollReveal().reveal(".main-header-content-principal_stripe-left", {
+  duration: 2000,
+  delay: 500,
+  origin: "left",
+  distance: "300px",
+});
+
+
+
 // -----  Main content -----
 ScrollReveal().reveal(".stats-section__reference", {
   duration: 2000,
