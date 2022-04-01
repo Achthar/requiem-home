@@ -953,8 +953,8 @@
 
 .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card__description {
   font-size: 1.4rem;
+  color: #770000;
   width: 70%;
-  color: black;
 }
 
 .main-content .cryptocurrencies-section .cryptocurrencies-info-cards .info-card__btn {
@@ -1591,6 +1591,7 @@
           align-items: center;
   z-index: 100;
   padding: 2px;
+  margin-top: 40px;
   width: 100%;
   list-style-type: none;
   border-radius: 16px;
@@ -1737,6 +1738,194 @@
   margin-top: 3px;
   width: 95%;
   border-radius: 34px;
+}
+
+.saturn {
+  /* 
+   * Make the initial position to be the center of the circle you want this
+   * object follow.
+   */
+  position: absolute;
+  top: 200px;
+  /*
+   * Sets up the animation duration, timing-function (or easing)
+   * and iteration-count. Ensure you use the appropriate vendor-specific 
+   * prefixes as well as the official syntax for now. Remember, tools like 
+   * CSS Please are your friends!
+   */
+  -webkit-animation: myOrbit 10s linear infinite;
+  /* Chrome, Safari 5 */
+  /* Firefox 5-15 */
+  /* Opera 12+ */
+  animation: myOrbit 10s linear infinite;
+  /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+
+/*
+* Set up the keyframes to actually describe the begining and end states of 
+* the animation.  The browser will interpolate all the frames between these 
+* points.  Again, remember your vendor-specific prefixes for now!
+*/
+@-webkit-keyframes myOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes myOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg);
+            transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+            transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+.saturn1 {
+  /* 
+   * Make the initial position to be the center of the circle you want this
+   * object follow.
+   */
+  position: absolute;
+  top: 200px;
+  /*
+   * Sets up the animation duration, timing-function (or easing)
+   * and iteration-count. Ensure you use the appropriate vendor-specific 
+   * prefixes as well as the official syntax for now. Remember, tools like 
+   * CSS Please are your friends!
+   */
+  -webkit-animation: myOrbit1 10s linear infinite;
+  /* Chrome, Safari 5 */
+  /* Firefox 5-15 */
+  /* Opera 12+ */
+  animation: myOrbit1 10s linear infinite;
+  /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+
+/*
+* Set up the keyframes to actually describe the begining and end states of 
+* the animation.  The browser will interpolate all the frames between these 
+* points.  Again, remember your vendor-specific prefixes for now!
+*/
+@-webkit-keyframes myOrbit1 {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+  }
+}
+
+@keyframes myOrbit1 {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-150px) rotate(0deg);
+            transform: rotate(0deg) translateX(-150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+            transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+  }
+}
+
+.saturn2 {
+  /* 
+   * Make the initial position to be the center of the circle you want this
+   * object follow.
+   */
+  position: absolute;
+  top: 200px;
+  /*
+   * Sets up the animation duration, timing-function (or easing)
+   * and iteration-count. Ensure you use the appropriate vendor-specific 
+   * prefixes as well as the official syntax for now. Remember, tools like 
+   * CSS Please are your friends!
+   */
+  -webkit-animation: myOrbit2 10s linear infinite;
+  /* Chrome, Safari 5 */
+  /* Firefox 5-15 */
+  /* Opera 12+ */
+  animation: myOrbit2 10s linear infinite;
+  /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+
+/*
+* Set up the keyframes to actually describe the begining and end states of 
+* the animation.  The browser will interpolate all the frames between these 
+* points.  Again, remember your vendor-specific prefixes for now!
+*/
+@-webkit-keyframes myOrbit2 {
+  from {
+    -webkit-transform: rotate(0deg) translateY(-150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateY(-150px) rotate(-360deg);
+  }
+}
+
+@keyframes myOrbit2 {
+  from {
+    -webkit-transform: rotate(0deg) translateY(-150px) rotate(0deg);
+            transform: rotate(0deg) translateY(-150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateY(-150px) rotate(-360deg);
+            transform: rotate(360deg) translateY(-150px) rotate(-360deg);
+  }
+}
+
+.saturn3 {
+  /* 
+   * Make the initial position to be the center of the circle you want this
+   * object follow.
+   */
+  position: absolute;
+  top: 200px;
+  /*
+   * Sets up the animation duration, timing-function (or easing)
+   * and iteration-count. Ensure you use the appropriate vendor-specific 
+   * prefixes as well as the official syntax for now. Remember, tools like 
+   * CSS Please are your friends!
+   */
+  -webkit-animation: myOrbit3 10s linear infinite;
+  /* Chrome, Safari 5 */
+  /* Firefox 5-15 */
+  /* Opera 12+ */
+  animation: myOrbit3 10s linear infinite;
+  /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+}
+
+/*
+* Set up the keyframes to actually describe the begining and end states of 
+* the animation.  The browser will interpolate all the frames between these 
+* points.  Again, remember your vendor-specific prefixes for now!
+*/
+@-webkit-keyframes myOrbit3 {
+  from {
+    -webkit-transform: rotate(0deg) translateY(150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateY(150px) rotate(-360deg);
+  }
+}
+
+@keyframes myOrbit3 {
+  from {
+    -webkit-transform: rotate(0deg) translateY(150px) rotate(0deg);
+            transform: rotate(0deg) translateY(150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateY(150px) rotate(-360deg);
+            transform: rotate(360deg) translateY(150px) rotate(-360deg);
+  }
 }
 
 .cta-section {
