@@ -346,30 +346,10 @@
         width: 100%;
         // border-width: 0 0 100px 100px;
         height: 100%;
-        border-top: 500px solid $background-color-box;
-        border-right: 170px solid transparent;
+        border-top: 510px solid $background-color-box;
+        border-right: 190px solid transparent;
         height: 0px;
         width: 4000px;
-      }
-
-      &_bg {
-        /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
-        position: absolute;
-        margin-right: 10px;
-        height: 100px;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
-        z-index: 99;
-
-        /* Pull the background 70px higher to the same place as #bg's */
-        background-position: center -70px;
-
-        -webkit-filter: blur(10px);
-        filter: url("/media/blur.svg#blur");
-        filter: blur(10px);
       }
 
       &_layer {
@@ -554,7 +534,7 @@
         align-items: flex-end;
         margin-right: -3700px;
         width: 100%;
-        margin-left: -50px;
+        margin-left: 1vw;
         // border-width: 0 0 100px 100px;
         height: 100%;
         border-top: 500px solid $background-color-box;
@@ -579,6 +559,7 @@
       }
 
       &_layer {
+        margin-top: 10px;
         max-width: 400px;
         /* Put this on top of the blurred layer */
         position: relative;
@@ -685,6 +666,7 @@
       }
 
       &__graphic {
+        margin-top: 20px;
         width: 100%;
         align-self: center;
       }

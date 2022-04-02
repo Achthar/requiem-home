@@ -660,26 +660,10 @@
         margin-right: -700px;
         width: 100%;
         height: 100%;
-        border-top: 500px solid rgba(0, 0, 0, 0.75);
-        border-right: 170px solid transparent;
+        border-top: 510px solid rgba(0, 0, 0, 0.75);
+        border-right: 190px solid transparent;
         height: 0px;
         width: 4000px; }
-      .main-content .features-section .invest-smart-article_bg {
-        /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
-        position: absolute;
-        margin-right: 10px;
-        height: 100px;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
-        z-index: 99;
-        /* Pull the background 70px higher to the same place as #bg's */
-        background-position: center -70px;
-        -webkit-filter: blur(10px);
-        filter: url("/media/blur.svg#blur");
-        filter: blur(10px); }
       .main-content .features-section .invest-smart-article_layer {
         max-width: 400px;
         /* Put this on top of the blurred layer */
@@ -834,7 +818,7 @@
       align-items: flex-end;
       margin-right: -3700px;
       width: 100%;
-      margin-left: -50px;
+      margin-left: 1vw;
       height: 100%;
       border-top: 500px solid rgba(0, 0, 0, 0.75);
       border-left: 90px solid transparent;
@@ -852,6 +836,7 @@
       height: 0px;
       width: 4300px; }
     .main-content .features-section .detailed-stats-article_layer {
+      margin-top: 10px;
       max-width: 400px;
       /* Put this on top of the blurred layer */
       position: relative;
@@ -955,6 +940,7 @@
           transform: scale(0.95);
           background-color: #3b0101; }
     .main-content .features-section .detailed-stats-article__graphic {
+      margin-top: 20px;
       width: 100%;
       align-self: center; }
     .main-content .features-section .grow-profit-article_stripe-right {
@@ -2015,6 +2001,47 @@
   .main-content .features-section .invest-smart-article, .main-content .features-section .detailed-stats-article, .main-content .features-section .grow-profit-article {
     justify-content: space-between;
     margin-bottom: 75px; }
+    .main-content .features-section .invest-smart-article_stripe-container {
+      margin-left: 200px; }
+    .main-content .features-section .invest-smart-article_stripe-right {
+      position: relative;
+      flex-direction: row;
+      align-self: center;
+      align-items: flex-start;
+      margin-right: -3700px;
+      margin-left: 195px;
+      height: 100%;
+      border-bottom: 250px solid rgba(0, 0, 0, 0.5);
+      border-left: 90px solid transparent;
+      height: 0px;
+      width: 4000px; }
+    .main-content .features-section .invest-smart-article_stripe-right-1 {
+      position: relative;
+      flex-direction: row;
+      align-self: center;
+      align-items: flex-end;
+      margin-top: 10px;
+      margin-right: -3700px;
+      margin-left: 100px;
+      width: 100%;
+      height: 100%;
+      border-bottom: 250px solid rgba(0, 0, 0, 0.5);
+      border-left: 90px solid transparent;
+      height: 0px;
+      width: 4000px; }
+    .main-content .features-section .invest-smart-article_stripe-left {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-end;
+      margin-left: -3700px;
+      margin-right: -700px;
+      width: 100%;
+      height: 100%;
+      border-top: 510px solid rgba(0, 0, 0, 0.75);
+      border-right: 190px solid transparent;
+      height: 0px;
+      width: 4000px; }
     .main-content .features-section .invest-smart-article__content {
       width: 350px;
       margin: 10px 0;
@@ -2033,20 +2060,62 @@
   .main-content .features-section .detailed-stats-article, .main-content .features-section .grow-profit-article {
     justify-content: space-between;
     margin-bottom: 75px; }
+    .main-content .features-section .detailed-stats-article_stripe-right {
+      margin-left: 1px;
+      height: 100%; }
+    .main-content .features-section .detailed-stats-article_stripe-left {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-start;
+      margin-left: -3800px;
+      margin-right: -100px;
+      border-bottom: 500px solid rgba(0, 0, 0, 0.5);
+      border-right: 90px solid transparent;
+      height: 0px;
+      width: 4300px; }
     .main-content .features-section .detailed-stats-article__content {
       width: 350px;
-      margin: 10px 0;
       justify-content: flex-start;
       text-align: left; }
       .main-content .features-section .detailed-stats-article__content__title {
         font-size: 2.6rem; }
       .main-content .features-section .detailed-stats-article__content__description {
         margin: 25px 0; }
+    .main-content .features-section .detailed-stats-article_layer {
+      width: 300px; }
+    .main-content .features-section .detailed-stats-article__content-details__description {
+      width: 300px;
+      margin-left: -80px; }
     .main-content .features-section .detailed-stats-article__graphic {
       width: 100%;
       order: -1; }
   .main-content .features-section .grow-profit-article {
     justify-content: space-between; }
+    .main-content .features-section .grow-profit-article_stripe-right {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-end;
+      margin-right: -3700px;
+      width: 100%;
+      margin-left: -100px;
+      height: 100%;
+      border-bottom: 500px solid rgba(0, 0, 0, 0.5);
+      border-left: 90px solid transparent;
+      height: 0px;
+      width: 4200px; }
+    .main-content .features-section .grow-profit-article_stripe-left {
+      position: relative;
+      flex-direction: column;
+      align-self: center;
+      align-items: flex-start;
+      margin-left: -3800px;
+      margin-right: 0vw;
+      border-top: 500px solid rgba(0, 0, 0, 0.75);
+      border-right: 90px solid transparent;
+      height: 0px;
+      width: 4300px; }
     .main-content .features-section .grow-profit-article__content {
       text-align: left; }
       .main-content .features-section .grow-profit-article__content__title {
