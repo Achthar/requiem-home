@@ -814,10 +814,25 @@
           }
         }
       }
+      &__graphic-background {
+        background-image: radial-gradient( rgba(54, 54, 54, 0.5) 50%, $background-color-box-sub );
+        border-radius: 100px;
+        transition: all 0.3s ease;
+        &:hover {
+          background-image: radial-gradient( rgba(160, 160, 160, 0.5) 5%, $background-color-box-sub );
+          transform: scale(1.8);
+          
+        }
+      }
       &__graphic {
+        z-index: 100;
         margin-top: 3px;
-        width: 95%;
+        width: 500px;
         border-radius: 34px;
+
+        &:hover {
+          transform: scale(1.7);
+        }
         // transform: scale(1.25)
       }
     }

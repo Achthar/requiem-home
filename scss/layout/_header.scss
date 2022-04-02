@@ -91,6 +91,7 @@
       }
       &__link-btn {
         @include button($width: 60%, $fnt-size: 1.3rem);
+        background-color: $button-background-color;
         max-width: 140px;
         height: 45px;
         width: 350px;
@@ -143,7 +144,7 @@
         align-items: center;
         z-index: 100;
         padding: 2px;
-        background: $background-color-box;
+        background: $background-color-box-sub;
         order: 2;
         width: 100%;
         list-style-type: none;

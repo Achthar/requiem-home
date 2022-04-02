@@ -231,7 +231,29 @@
     .payment-systems {
       max-width: 300px;
       &-icons {
-        width: 80%;
+        width: 150px;
+      }
+
+      &-logo {
+        width: 100px;
+        max-width: 340px;
+        // @include flexbox($jtf: space-between);
+        img{
+          width: 100px;
+        }
+        .fab {
+          font-size: 50px;
+          color: #fff;
+          cursor: pointer;
+          transition: color 0.3s ease-in;
+  
+          &:hover {
+            color: lighten($btn-bg-color, 20%);
+          }
+          &:active {
+            color: lighten($bitcoin-icon-bg-color, 10%);
+          }
+        }
       }
     }
   }
