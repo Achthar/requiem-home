@@ -1605,6 +1605,8 @@
 }
 
 .main-content .features-section .detailed-stats-article__graphic {
+  -webkit-filter: opacity(75%);
+          filter: opacity(75%);
   margin-top: 20px;
   width: 100%;
   -ms-flex-item-align: center;
@@ -2829,7 +2831,7 @@
             align-items: flex-start;
     margin-left: -3900px;
     margin-right: -100px;
-    border-bottom: 300px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 320px solid rgba(0, 0, 0, 0.5);
     border-right: 90px solid transparent;
     height: 0px;
     width: 4300px;
